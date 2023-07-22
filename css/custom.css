@@ -17,7 +17,19 @@
     - Themanoid
 
 ----------------------------*/
-
-.brand img{
-    width: 45px;
+.brand img {
+  width: 45px;
 }
+
+html.dark ul.navigation li a:hover, html.dark ul.navigation li a.active {
+  position: relative;
+}
+html.dark ul.navigation li a:hover:after, html.dark ul.navigation li a.active:after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+}
+html.dark .c-primary {
+  color: var(--primary) !important;
+}/*# sourceMappingURL=custom.css.map */

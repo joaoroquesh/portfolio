@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <title>Eight - Creative Template for professionals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/core.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <!-- inject:css-->
+    <!-- endinject -->
+    <link rel="icon" type="image/png" href="favicon.png?version=1">
+    <script src="js/assets/jquery.js"></script>
+  </head>
+  <body class="smooth-transition boxed">
+    <div class="container-fluid">
+      <!--
+        Navigation Dinâmico
+      -->
+      <header id="navigation"></header>
+      <!--
+        Navigation Dinâmico
+      -->
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1> <span class="typed">Hello</span></h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 content">
+              <p>Adoraria receber seu contato!</p>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+              <!-- The contact form-->
+              <form id="form" action="/php/mail.php" class="form row">
+                <div class="col-md-6">
+                  <div class="tag">Qual o seu nome? *</div>
+                  <input required type="text" name="name" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <div class="tag">Telefone</div>
+                  <input type="text" name="phone" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <div class="tag">E-mail *</div>
+                  <input required type="email" name="email" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <div class="tag">Site</div>
+                  <input type="text" name="website" class="form-control">
+                </div>
+                <div class="col-md-12">
+                  <div class="tag">Diga o que precisa! *</div>
+                  <textarea required name="message" class="form-control"></textarea>
+                  <button id="send" type="submit" class="btn btn-default">Enviar mensagem</button><span class="p-md">* Esses campos são obrigatórios</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The type animation script-->
+      <script>$(function(){$(".typed").typed({strings: ["Olá", "Hello", "Shalom", "Ciao"],typeSpeed: 130,loop: true  });});</script>
+      <!--
+        Footer Dinâmico
+      -->
+      <footer id="footer"></footer>
+      <footer id="footer-bottom" class="bottom"></footer>
+      <!--
+        Footer Dinâmico
+      -->
+    </div>
+    <script src="../js/assets/bootstrap.js"></script>
+    <script src="../js/assets/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/assets/validation.js"></script>
+    <script src="../js/assets/packery.pkgd.min.js"></script>
+    <script src="../js/assets/velocity.min.js"></script>
+    <script src="../js/assets/typed.min.js"></script>
+    <script src="../modules/titan-slider/titan-slider.js"></script>
+    <script src="../modules/tera-lightbox/tera-lightbox.js"></script>
+    <script src="../js/assets/animsition.js"></script>
+    <script src="../js/functions.js"></script>
+
+    <script>
+      $("#navigation").load("modules/fixed/menu.html");
+      $("#footer").load("modules/fixed/footer.html");
+      $("#footer-bottom").load("modules/fixed/footer-bottom.html");
+    </script>
+  </body>
+</html>
