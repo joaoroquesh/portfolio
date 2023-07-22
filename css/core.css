@@ -1,3 +1,8 @@
+:root{
+  --primary:#2C55D5;
+  --font-family:"Montserrat", "Helvetica Neue", Helvetica, sans-serif;;
+}
+
 @charset "UTF-8";
 /*------------------------------
 
@@ -38,7 +43,7 @@
 @import url(https://fonts.googleapis.com/css?family=Heebo:400,300,500);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 html {
-  font-family: sans-serif;
+  font-family: var(--font-family);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -1408,7 +1413,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -6902,7 +6907,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7036,7 +7041,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7333,7 +7338,7 @@ button.close {
   width: 20px;
   height: 20px;
   line-height: 1;
-  font-family: serif;
+  font-family: var(--font-family);
 }
 
 .carousel-control .icon-prev:before {
@@ -16659,11 +16664,11 @@ body.no-lines .l1, body.no-lines .l2, body.no-lines .l3 {
 */
 body {
   color: #000;
-  font-family: "Heebo", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: var(--font-family);
 }
 
 h1, h2, h3, h4 {
-  font-family: "Playfair Display", "Times New Roman", serif;
+  font-family: var(--font-family);
 }
 
 h1.underline:after, h2.underline:after, h3.underline:after, h4.underline:after {
