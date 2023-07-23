@@ -13,7 +13,7 @@
       </div>
       <ul class="navigation">
         <li>
-            <a href="https://www.joaoroquedesign.com/" class="active">Portfólio</a>
+            <a href="https://www.joaoroquedesign.com/">Portfólio</a>
         </li>
         <li>
             <a href="https://www.joaoroquedesign.com/sobre">Sobre</a>
@@ -40,3 +40,24 @@
       -->
     </div>
   </div>
+
+  <script>
+    // Array com os itens de menu
+var menuItems = document.querySelectorAll('.menu-item');
+
+// Loop por todos os itens de menu
+for (var i = 0; i < menuItems.length; i++) {
+    // Obtém o atributo href do item do menu
+    var menuItemHref = menuItems[i].getAttribute('href');
+
+    // Verifica se o href do item do menu é igual ao caminho da página atual
+    if (window.location.pathname === menuItemHref) {
+        // Se for, adiciona a classe 'active' ao item do menu
+        menuItems[i].classList.add('active');
+    } else {
+        // Se não for, remove a classe 'active' (se existir)
+        menuItems[i].classList.remove('active');
+    }
+}
+
+  </script>

@@ -21,14 +21,44 @@
   width: 45px;
 }
 
+.bg {
+  background-image: url("../images/bg.png");
+  background-size: 70%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1200px) {
+  .bg {
+    background-size: 60%;
+  }
+}
+@media (max-width: 992px) {
+  .bg {
+    background-position: 50% 0%;
+  }
+}
+@media (max-width: 567px) {
+  .bg {
+    background-size: 100%;
+    background-position: 50% 40%;
+  }
+}
+
 html.dark ul.navigation li a:hover, html.dark ul.navigation li a.active {
+  font-weight: bold;
   position: relative;
 }
 html.dark ul.navigation li a:hover:after, html.dark ul.navigation li a.active:after {
+  content: "";
   position: absolute;
+  bottom: 10px;
+  left: 0;
   width: 100%;
   height: 2px;
   background: var(--primary);
+}
+html.dark .typed-cursor {
+  color: var(--primary) !important;
 }
 html.dark .c-primary {
   color: var(--primary) !important;

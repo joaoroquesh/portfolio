@@ -16151,7 +16151,7 @@ html.dark p {
 }
 
 html.dark a:hover, html.dark a.active {
-  opacity: .5;
+  opacity: 1;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
