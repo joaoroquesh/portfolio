@@ -356,7 +356,7 @@ ul.navigation li:hover ul.dropdown {
 }
 
 .grid.masonry .item .thumb {
-  background: var(--primary);
+  background: var(--gray);
 }
 
 @media screen and (max-width: 992px) {

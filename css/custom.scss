@@ -60,6 +60,18 @@ html.dark{
     .typed-cursor{
         color: var(--primary)!important;
     }
+
+    .social-links{
+        li{
+            a{
+                font-size: 2rem;
+                margin: 3px 15px!important;
+                &:hover{
+                    color: var(--primary)!important;
+                }
+            }
+        }
+    }
     
     .c-primary{
         color: var(--primary)!important;

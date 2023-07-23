@@ -60,6 +60,13 @@ html.dark ul.navigation li a:hover:after, html.dark ul.navigation li a.active:af
 html.dark .typed-cursor {
   color: var(--primary) !important;
 }
+html.dark .social-links li a {
+  font-size: 2rem;
+  margin: 3px 15px !important;
+}
+html.dark .social-links li a:hover {
+  color: var(--primary) !important;
+}
 html.dark .c-primary {
   color: var(--primary) !important;
 }/*# sourceMappingURL=custom.css.map */
