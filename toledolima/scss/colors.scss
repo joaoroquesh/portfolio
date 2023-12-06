@@ -1,0 +1,99 @@
+//tokens
+
+$dark:#111;
+$light:#f0f0f0;
+
+$branco:#FFF;
+$cinza-50:$light;
+$cinza-100:darken($light, 10%);
+$cinza-200:darken($light, 20%);
+$cinza-300:darken($light, 30%);
+$cinza-400:darken($light, 40%);
+$cinza-500:lighten($dark, 40%);
+$cinza-600:lighten($dark, 30%);
+$cinza-700:lighten($dark, 20%);
+$cinza-800:lighten($dark, 10%);
+$cinza-900:$dark;
+$preto:#000;
+
+
+
+
+$azul-300: #244CFF;
+$azul-400: #1935B3;
+$azul: #122561;
+$azul-600: darken($azul, 10%) !default;
+$azul-700: darken($azul, 15%) !default;
+
+$roxo-300: #828FC9;
+$roxo-400: #4F61B3;
+$roxo: #384580;
+$roxo-600: darken($roxo, 10%) !default;
+$roxo-700: darken($roxo, 15%) !default;
+
+
+
+$amarelo-400: #F5E286;
+$amarelo-300: lighten($amarelo-400, 10%) !default;
+$amarelo: #B29220;
+$amarelo-600: #A9793A;
+$amarelo-700: darken($amarelo-600, 10%) !default;
+
+
+:root{   
+  --primary-300:#{$azul-300};
+  --primary-400:#{$azul-400}; 
+  --primary:#{$azul};
+  --primary-600:#{$azul-600};
+  --primary-700:#{$azul-700};
+
+  --secondary-300:#{$roxo-300};
+  --secondary-400:#{$roxo-400}; 
+  --secondary:#{$roxo};
+  --secondary-600:#{$roxo-600};
+  --secondary-700:#{$roxo-700};
+
+  --accent-300:#{$amarelo-300};
+  --accent-400:#{$amarelo-400}; 
+  --accent:#{$amarelo};
+  --accent-600:#{$amarelo-600};
+  --accent-700:#{$amarelo-700};
+
+
+  --cinza-50: #{$cinza-50};
+  --cinza-100:#{$cinza-100};
+  --cinza-200:#{$cinza-200};
+  --cinza-300:#{$cinza-300};
+  --cinza-400:#{$cinza-400};
+  --cinza-500:#{$cinza-500};
+  --cinza-600:#{$cinza-600};
+  --cinza-700:#{$cinza-700};
+  --cinza-800:#{$cinza-800};
+  --cinza-900:#{$cinza-900};
+
+
+  --sombra:#3a3a3a0d;
+  --transparente:rgba(0,0,0,0);
+}
+
+
+
+$primary-300:var(--primary-300);
+$primary-400:var(--primary-400);
+$primary:var(--primary);
+$primary-600:var(--primary-600);
+$primary-700:var(--primary-700);
+
+$secondary-300:var(--secondary-300);
+$secondary-400:var(--secondary-400);
+$secondary:var(--secondary);
+$secondary-600:var(--secondary-600);
+$secondary-700:var(--secondary-700);
+
+$accent-300:var(--accent-300);
+$accent-400:var(--accent-400);
+$accent:var(--accent);
+$accent-600:var(--accent-600);
+$accent-700:var(--accent-700);
+
+$sombra:var(--sombra);;

@@ -1,0 +1,114 @@
+@import 'colors.scss';
+@import 'styles.css';
+$ft-1:var(--font-primary);
+$ft-2:var(--font-secondary);
+
+:root {
+    --bs-link-color: $primary;
+    --bs-link-hover-color: $primary;
+    --bs-border-radius: 0rem;
+}
+
+.nav {
+
+    &-section {
+        background-color: rgba($color: #fff, $alpha: 0);
+        transition: background-color 0.3s ease;
+        .collapsing {
+            @media only screen and (min-width: 991px) {
+                height: 100% !important;
+            }
+        }
+    }
+
+    &-item {
+        padding: 0rem .5rem !important;
+
+        @media (max-width:992px) {
+
+            &:nth-child(1) {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    &-link {
+        
+        cursor: pointer;
+        color: $primary !important;
+        font-weight: 600;
+        font-size: var(--font-size-small);
+        line-height: var(--font-size-small);
+        //font-family: $ft-2;
+
+        &:hover {
+            color: $accent !important;
+        }
+
+        @media (max-width:992px) {
+            border: 0px;
+            padding: .5rem 0rem !important;
+        }
+
+        &.active{
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                bottom: 0px;
+                right: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $accent;
+            }
+        }
+
+    }
+
+
+    &-space {
+        height: 82px;
+        width: 100%;
+    }
+}
+
+
+#home{
+    height: calc(100vh);
+    background-image: url('../images/bg-home.png');
+    background-size: cover;
+    background-color: rgba($color: #fff, $alpha: .3);
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba($color: #fff, $alpha: .5) 0%, rgba($color: #fff, $alpha: .3) 100%);
+    }
+    .content{
+        position: relative;
+        z-index: 10;
+    }
+    h6{
+        line-height: 1.4!important;
+    }
+}
+
+#sobre{
+
+    h6{
+        line-height: 1.4!important;
+    }
+}
+
+.line{
+    height: 30px;
+}
+
+.top{
+    background-image: url(../images/marmore.jpg);
+    background-attachment: fixed;
+}
