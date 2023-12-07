@@ -9,6 +9,7 @@
   <script src="js/header.js"></script>
 
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="font/stylesheet.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <title>Toledo & Lima</title>
@@ -42,7 +43,7 @@
         <div class="col px-0">
 
           <nav id="navbar" class="navbar navbar-expand-lg navbar-light px-0">
-            <a href="" class="navbar-brand" target="_blank">
+            <a href="#" class="navbar-brand">
               <img src="images/logo-full.svg" height="40px" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +54,7 @@
 
               <ul class="navbar-nav align-items-lg-center justify-content-end w-100">
                 <li class="nav-item">
-                  <a class="nav-link" href="#home">Home</a>
+                  <a class="nav-link active" href="#home">Home</a>
                 </li>
 
                 <li class="nav-item">
@@ -170,7 +171,10 @@
         <div class="row center-h py-5">
           <div class="col-lg-8">
             <div class="title text-center mb-3">
-              <img src="images/quem.svg" alt="Quem somos" data-aos="fade-down">
+              <img class="title" src="images/quem.svg" alt="Quem somos" data-aos="fade-down">
+              <!-- <h1 class="c-accent ft-2 text-uppercase">
+                Quem somos
+              </h1> -->
             </div>
             <div class="collapse show multi-collapse text-justify" id="multiCollapse1">
               <p class="c-primary resumido text-justify">
@@ -240,15 +244,15 @@
       </div>
     </section>
 
-    <section class="line bg-primary"></section>
+    <section class="line"></section>
 
     <section id="missao">
       <div class="top py-5">
         <div class="container py-5">
           <div class="row">
             <div class="col">
-              <div class="title text-center mb-3">
-                <img src="images/missao.svg" alt="Missão" data-aos="fade-down">
+              <div class="text-center mb-3">
+                <img class="title" src="images/missao.svg" alt="Missão" data-aos="fade-down">
               </div>
             </div>
           </div>
@@ -260,7 +264,7 @@
             <div class="col-lg-6">
               <img src="images/missao.png" class="img-fluid" alt="Missão" data-aos="fade-right">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 py-5">
               <h6 class="c-primary fw-400 mb-0">
                 Auxiliar empresas e profissionais da área da saúde na solução inovadora de problemas relacionados à questões trabalhistas legais, comportamento seguro e saúde do trabalhador por meio da consultoria <b>Toledo & Lima.</b>
               </h6>
@@ -275,8 +279,8 @@
         <div class="container py-5">
           <div class="row">
             <div class="col">
-              <div class="title text-center mb-3">
-                <img src="images/visao.svg" alt="Visão" data-aos="fade-down">
+              <div class="text-center mb-3">
+                <img class="title" src="images/visao.svg" alt="Visão" data-aos="fade-down">
               </div>
             </div>
           </div>
@@ -285,7 +289,7 @@
       <div class="bottom py-3">
         <div class="container">
           <div class="row center-v">
-            <div class="col-lg-6">
+            <div class="col-lg-6 py-5">
               <h6 class="c-primary fw-400 mb-0">
                 Ser reconhecida como a empresa de consultoria referência em ajudar a solucionar questões de saúde e de segurança do trabalho do trabalhador por meio da entrega de uma proposta inovadora.
               </h6>
@@ -303,8 +307,8 @@
         <div class="container py-5">
           <div class="row">
             <div class="col">
-              <div class="title text-center mb-3">
-                <img src="images/valores.svg" alt="Valores" data-aos="fade-down">
+              <div class="text-center mb-3">
+                <img class="title" src="images/valores.svg" alt="Valores" data-aos="fade-down">
               </div>
             </div>
           </div>
@@ -316,7 +320,7 @@
             <div class="col-lg-6">
               <img src="images/valores.png" class="img-fluid" alt="Valores" data-aos="fade-right">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 py-5">
               <h6 class="c-primary fw-400 mb-0">
                 Trabalhamos com empatia, entrega, lealdade, compromisso e intensidade, prezando sempre a solução em saúde e o conhecimento técnico-legal.
               </h6>
@@ -326,21 +330,107 @@
       </div>
     </section>
 
-    <section class="line bg-primary"></section>
+    <section class="line"></section>
+
+    <section id="pontos">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg data-aos="fade-right" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z" fill="#384580"/>
+                </svg>
+                <img class="title" src="images/profissional.svg" alt="profissional">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg data-aos="fade-right" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z" fill="#384580"/>
+                </svg>
+                <img class="title" src="images/confiavel.svg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg data-aos="fade-right" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z" fill="#384580"/>
+                </svg>
+                <img class="title" src="images/experiente.svg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg data-aos="fade-right" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z" fill="#384580"/>
+                </svg>
+                <img class="title" src="images/comprometida.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="line-thin"></section>
+
+    <section id="contato">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col">
+            <div class="text-center mb-3">
+              <img class="title" src="images/contato.svg" alt="Contato" data-aos="fade-down">
+            </div>
+            <p class="c-primary text-center">
+              Digite seu nome e telefone para entrar em contato conosco!
+            </p>
+            <form class="form row center-h">
+              <div class="px-2 col-lg-3 col-md-4 col-sm-6">
+                <input type="text" class="form-control text-center" id="name" placeholder="Nome">
+              </div>
+              <div class="px-2 col-lg-3 col-md-4 col-sm-6">
+                <input type="tel" class="form-control text-center" id="tel" placeholder="Telefone">
+              </div>
+              <div class="px-2 col-lg-2 col-md-3 col-sm-12">
+                <button type="submit" class="btn btn-primary h-100 w-100">
+                  Fale conosco
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="line-thin rotate"></section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-sm-6 ">
+            <p class="c-primary small my-2">
+              Este site foi desenvolvido por
+            </p>
+          </div>
+          <div class="col-sm-6 text-sm-end">
+            <p class="c-primary small my-2">
+              Todos os direitos reservados - 2023
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="pattern">
+
+      </div>
+    </footer>
   </section>
 
 
 
-  <script>
-    // Neste exemplo, não queremos carregar o popper
-    var jquery = false;
-    var popper = false;
-    // var bootstrap = false;
-  </script>
-
-  <script src="../js/centralScript.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var ver = document.getElementById('ver');

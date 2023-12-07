@@ -32,6 +32,7 @@
 :root {
   --bs-link-color: $primary;
   --bs-link-hover-color: $primary;
+  --bs-navbar-color: $primary;
   --bs-border-radius: 0rem;
 }
 
@@ -115,9 +116,67 @@
 
 .line {
   height: 30px;
+  background-color: var(--primary);
+  background-image: url(../images/line-blue.png);
+  background-size: contain;
+}
+.line-thin {
+  height: 15px;
+  background-color: var(--accent);
+  background-image: url(../images/line-gold.png);
+  background-size: cover;
+}
+.line-thin.rotate {
+  rotate: 180deg;
 }
 
 .top {
   background-image: url(../images/marmore.jpg);
   background-attachment: fixed;
+}
+
+.title {
+  max-height: 50px;
+  width: 100%;
+}
+
+#pontos .icon {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2.5rem;
+}
+#pontos .icon svg {
+  min-width: 40px;
+}
+#pontos .icon .title {
+  width: 80%;
+}
+
+#contato .form {
+  gap: 1rem 0;
+}
+#contato .form-control {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+#contato .form-control:focus {
+  box-shadow: 0 0 3px 0 var(--accent);
+  border-color: var(--accent-600);
+}
+#contato .form-control::-moz-placeholder {
+  color: var(--secondary);
+}
+#contato .form-control::placeholder {
+  color: var(--secondary);
+}
+
+footer .pattern {
+  height: 50px;
+  background-image: url(../images/pattern.png);
+  background-size: contain;
+}
+@media (max-width: 576px) {
+  footer .pattern {
+    background-size: cover;
+  }
 }/*# sourceMappingURL=style-page.css.map */

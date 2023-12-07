@@ -6,6 +6,7 @@ $ft-2:var(--font-secondary);
 :root {
     --bs-link-color: $primary;
     --bs-link-hover-color: $primary;
+    --bs-navbar-color: $primary;
     --bs-border-radius: 0rem;
 }
 
@@ -106,9 +107,73 @@ $ft-2:var(--font-secondary);
 
 .line{
     height: 30px;
+    background-color: $primary;
+    background-image: url(../images/line-blue.png);
+    background-size: contain;
+    &-thin{
+        height: 15px;
+        background-color: $accent;
+        background-image: url(../images/line-gold.png);    
+        background-size: cover;
+
+        &.rotate{
+            rotate: 180deg;
+        }
+    }
 }
 
 .top{
     background-image: url(../images/marmore.jpg);
     background-attachment: fixed;
+
+}
+.title{
+    max-height: 50px;
+    width: 100%;
+}
+
+#pontos{
+
+    .icon{
+        display: flex;
+        gap: 1rem;
+        padding-bottom: 2.5rem;
+        svg{
+            min-width: 40px;
+        }
+        .title{
+            width: 80%;
+        }
+    }
+}
+
+#contato{
+
+    .form{
+       gap: 1rem 0;
+
+       &-control{
+        border: 2px solid $primary;
+        color: $primary;
+
+        &:focus{
+            box-shadow: 0 0 3px 0 $accent;
+            border-color: $accent-600;
+        }
+        &::placeholder{
+            color:$secondary;
+        }
+       }
+    }
+}
+
+footer{
+    .pattern{
+        height: 50px;
+        background-image: url(../images/pattern.png);
+        background-size: contain;
+        @media (max-width:576px) {
+            background-size: cover;
+        }
+    }
 }
