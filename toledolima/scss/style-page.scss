@@ -10,14 +10,87 @@ $ft-2:var(--font-secondary);
     --bs-border-radius: 0rem;
 }
 
+.box{
+    overflow: hidden;
+}
+.parallax-img{
+    //transition: .3s all ease-in-out;
+}
+
+.title {
+    max-height: 50px;
+    //width: 100%;
+}
+
+.line {
+    height: 30px;
+    background-color: $primary;
+    background-image: url(../images/line-blue.png);
+    background-size: contain;
+
+    &-thin {
+        height: 15px;
+        background-color: $accent;
+        background-image: url(../images/line-gold.png);
+        background-size: cover;
+
+        &.rotate {
+            rotate: 180deg;
+        }
+    }
+}
+
+.btn {
+
+    &-gradient {
+        background-color: hsla(44, 84%, 70%, 1);
+        background-image: url(../images/bg-azul-small.jpg);
+        background-size: 200%;
+        background-position: left;
+        border: 0px !important;
+        color: $branco;
+        transition: .5s all ease-in-out;
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active,
+        .show>&.dropdown-toggle,
+        &:hover {
+            background-position: right;
+            color: $branco;
+        }
+
+        &:active {
+            background-position: left;
+        }
+
+        &:focus-visible {
+            outline: $primary auto 0px;
+        }
+
+        &.focus,
+        &:focus,
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        .show>&.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0rem $accent;
+        }
+    }
+}
+
 .nav {
 
     &-section {
         background-color: rgba($color: #fff, $alpha: 0);
         transition: background-color 0.3s ease;
+
         .collapsing {
             @media only screen and (min-width: 991px) {
                 height: 100% !important;
+            }
+        }
+        .py-2{
+            @media (max-width:992px) {
+               padding-bottom: 0px!important; 
             }
         }
     }
@@ -30,11 +103,14 @@ $ft-2:var(--font-secondary);
             &:nth-child(1) {
                 margin-top: 1rem;
             }
+            &:last-child {
+                margin-bottom: 1rem;
+            }
         }
     }
 
     &-link {
-        
+        text-transform: uppercase;
         cursor: pointer;
         color: $primary !important;
         font-weight: 600;
@@ -43,7 +119,7 @@ $ft-2:var(--font-secondary);
         //font-family: $ft-2;
 
         &:hover {
-            color: $accent !important;
+            color: $secondary-400 !important;
         }
 
         @media (max-width:992px) {
@@ -51,9 +127,10 @@ $ft-2:var(--font-secondary);
             padding: .5rem 0rem !important;
         }
 
-        &.active{
+        &.active {
             position: relative;
-            &:after{
+
+            &:after {
                 content: '';
                 position: absolute;
                 bottom: 0px;
@@ -62,9 +139,39 @@ $ft-2:var(--font-secondary);
                 width: 100%;
                 height: 2px;
                 background-color: $accent;
+                background-image: url(../images/gold.png);
             }
         }
 
+    }
+    
+    &bar{
+        @media (max-width:992px) {
+            padding-bottom: 0px!important; 
+         }
+         &-brand{
+            
+            @media (max-width:992px) {
+                margin-left: 1rem;
+                margin-bottom: 1rem!important; 
+             }
+         }
+        &-toggler{
+            border: 1px solid $primary;
+            &:focus{
+                box-shadow: 0 0 4px $secondary;
+            }
+            @media (max-width:992px) {
+                margin-bottom: 1rem!important; 
+             }
+        }
+        &-collapse{
+            &.show{
+                background-color: rgba($color: #fff, $alpha: 0.8);
+                
+                backdrop-filter: blur(10px);
+            }
+        }
     }
 
 
@@ -74,104 +181,138 @@ $ft-2:var(--font-secondary);
     }
 }
 
-
-#home{
+#home {
     height: calc(100vh);
     background-image: url('../images/bg-home.png');
     background-size: cover;
     background-color: rgba($color: #fff, $alpha: .3);
-    position: relative;
-    &:after{
+    background-attachment: fixed;
+    overflow: hidden;
+
+    @media (max-width:576px) {
+        padding-top: 150px;
+        height: auto;
+        background: #fff;
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position: center bottom;
+    }
+
+    &:after {
         content: '';
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
         background: linear-gradient(90deg, rgba($color: #fff, $alpha: .5) 0%, rgba($color: #fff, $alpha: .3) 100%);
+
+        @media (max-width:576px) {
+            content: none;
+        }
+
     }
-    .content{
+    .img-mobile{
+        padding-block: 8rem;
+        background-image: url('../images/bg-home.png');
+        background-size: cover;
+        background-position: right;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            top: -1px;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(180deg, rgba($color: #fff, $alpha: 1) 0%, rgba($color: #fff, $alpha: 0) 100%);
+        }
+    }
+
+    .px-0 {
+        padding-inline: 0.01px !important;
+    }
+
+    .content {
         position: relative;
         z-index: 10;
     }
-    h6{
-        line-height: 1.4!important;
+
+    h6 {
+        line-height: 1.4 !important;
+    }
+
+    .btn-gradient {
+        width: 230px;
     }
 }
 
-#sobre{
-
-    h6{
-        line-height: 1.4!important;
+#sobre {
+    background-image: url(../images/marmore.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    h6 {
+        line-height: 1.4 !important;
     }
 }
 
-.line{
-    height: 30px;
-    background-color: $primary;
-    background-image: url(../images/line-blue.png);
-    background-size: contain;
-    &-thin{
-        height: 15px;
-        background-color: $accent;
-        background-image: url(../images/line-gold.png);    
-        background-size: cover;
+#pontos {
 
-        &.rotate{
-            rotate: 180deg;
+    .icon {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1.5rem;
+        
+
+        svg {
+            width: 26px;
+        }
+
+        .title {
+            width: 80%;
+            max-width: 300px;
+        }
+        .text{
+            p{
+                font-size: .875rem!important;
+            }
         }
     }
 }
 
-.top{
+#escolha{
     background-image: url(../images/marmore.jpg);
+    background-size: cover;
     background-attachment: fixed;
 
 }
-.title{
-    max-height: 50px;
-    width: 100%;
-}
 
-#pontos{
+#contato {
 
-    .icon{
-        display: flex;
-        gap: 1rem;
-        padding-bottom: 2.5rem;
-        svg{
-            min-width: 40px;
-        }
-        .title{
-            width: 80%;
+    .form {
+        gap: 1rem 0;
+
+        &-control {
+            border: 2px solid $primary;
+            color: $primary;
+
+            &:focus {
+                box-shadow: 0 0 3px 0 $accent;
+                border-color: $accent-600;
+            }
+
+            &::placeholder {
+                color: $secondary;
+            }
         }
     }
 }
 
-#contato{
-
-    .form{
-       gap: 1rem 0;
-
-       &-control{
-        border: 2px solid $primary;
-        color: $primary;
-
-        &:focus{
-            box-shadow: 0 0 3px 0 $accent;
-            border-color: $accent-600;
-        }
-        &::placeholder{
-            color:$secondary;
-        }
-       }
-    }
-}
-
-footer{
-    .pattern{
+footer {
+    .pattern {
         height: 50px;
         background-image: url(../images/pattern.png);
         background-size: contain;
+
         @media (max-width:576px) {
             background-size: cover;
         }

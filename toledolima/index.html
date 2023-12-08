@@ -46,7 +46,8 @@
             <a href="#" class="navbar-brand">
               <img src="images/logo-full.svg" height="40px" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -91,15 +92,17 @@
   <section id="tl" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example"
     tabindex="0">
 
-    <section id="home">
+    <section id="home" class="parallax-background" data-speed="-0.2">
       <div class="container h-100 content">
         <div class="row center-v h-100">
-          <div class="col-lg-6">
-            <h6 class="c-primary mb-3">
+
+          <div class="col-lg-6 col-md-8 col-sm-10">
+            <h6 class="c-primary mb-3 pe-5 pe-sm-3">
               Se você é uma clínica de saúde, hospital, laboratório ou advogado(a) trabalhista preocupado em <b>resolver
-                questões com gestão de pessoas, segurança e bem estar dos trabalhadores</b>, a
+                questões com gestão de pessoas, segurança e bem estar dos trabalhadores</b>, a <b>Toledo & Lima</b> é a
+              solução ideal para você.
             </h6>
-            <svg version="1.1" class="fill-primary w-75" data-aos="fade-right" id="logo-name" xmlns="http://www.w3.org/2000/svg"
+            <!-- <svg version="1.1" class="fill-primary w-75" data-aos="fade-right" id="logo-name" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1534.1 160.4">
               <g id="toledo">
                 <path d="M110.9,34.8H109L94.2,14.4h-31V150l6.7,5.6v1.9H41v-1.9l6.7-5.6V14.4h-31L1.9,34.8H0l4.6-22.9h101.7L110.9,34.8L110.9,34.8
@@ -151,20 +154,22 @@
                 <path d="M1534.1,156.6v1.9h-34.7v-1.9l7.7-5.8L1488,101h-53.4l-18.3,47.4l10.6,8.1v1.9h-27.7v-1.9l14.6-8.5l46-119.8l-6-15.4h16.6
 		l53,136.6L1534.1,156.6L1534.1,156.6z M1486.9,98.6l-25.8-66.8l-25.8,66.8H1486.9L1486.9,98.6z" />
               </g>
-            </svg>
-            <h6 class="c-primary mt-3 mb-4">
+            </svg> -->
+            <!-- <h6 class="c-primary mt-3 mb-4">
               é a solução ideal para você.
-            </h6>
-            <a href="#sobre" class="btn btn-primary btn-click px-5 w-50">
+            </h6> -->
+            <a href="#sobre" class="btn btn-gradient btn-click px-5">
               Saiba mais
             </a>
           </div>
-          <div class="col mx-0 d-none">
-            <img src="images/bg-home.png" class="img-fluid w-100" alt="">
+          <div class="col mx-0 d-sm-none px-0 mt-5 img-mobile parallax-img" data-speed="0.1">
+            <!-- <img src="images/bg-home.png" class="img-fluid w-100 mt-5" alt=""> -->
           </div>
         </div>
       </div>
     </section>
+
+    <section class="line"></section>
 
     <section id="sobre">
       <div class="container py-5">
@@ -172,9 +177,6 @@
           <div class="col-lg-8">
             <div class="title text-center mb-3">
               <img class="title" src="images/quem.svg" alt="Quem somos" data-aos="fade-down">
-              <!-- <h1 class="c-accent ft-2 text-uppercase">
-                Quem somos
-              </h1> -->
             </div>
             <div class="collapse show multi-collapse text-justify" id="multiCollapse1">
               <p class="c-primary resumido text-justify">
@@ -244,29 +246,25 @@
       </div>
     </section>
 
-    <section class="line"></section>
+    <section class="line mb-5"></section>
 
     <section id="missao">
-      <div class="top py-5">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col">
-              <div class="text-center mb-3">
-                <img class="title" src="images/missao.svg" alt="Missão" data-aos="fade-down">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="bottom py-3">
         <div class="container">
           <div class="row center-v">
             <div class="col-lg-6">
-              <img src="images/missao.png" class="img-fluid" alt="Missão" data-aos="fade-right">
+              <div class="box">
+                <img src="images/missao.png" class="img-fluid parallax-img" data-speed="0.1" alt="Missão">
+              </div>
             </div>
             <div class="col-lg-6 py-5">
-              <h6 class="c-primary fw-400 mb-0">
-                Auxiliar empresas e profissionais da área da saúde na solução inovadora de problemas relacionados à questões trabalhistas legais, comportamento seguro e saúde do trabalhador por meio da consultoria <b>Toledo & Lima.</b>
+              <div class=" mb-3">
+                <img class="title" src="images/missao.svg" alt="Missão" data-aos="fade-left">
+              </div>
+              <h6 class="c-primary fw-400 mb-0" data-aos="fade-left">
+                Auxiliar empresas e profissionais da área da saúde na solução inovadora de problemas relacionados à
+                questões trabalhistas legais, comportamento seguro e saúde do trabalhador por meio da consultoria
+                <b>Toledo & Lima.</b>
               </h6>
             </div>
           </div>
@@ -275,27 +273,23 @@
     </section>
 
     <section id="visao">
-      <div class="top py-5">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col">
-              <div class="text-center mb-3">
-                <img class="title" src="images/visao.svg" alt="Visão" data-aos="fade-down">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="bottom py-3">
         <div class="container">
           <div class="row center-v">
-            <div class="col-lg-6 py-5">
-              <h6 class="c-primary fw-400 mb-0">
-                Ser reconhecida como a empresa de consultoria referência em ajudar a solucionar questões de saúde e de segurança do trabalho do trabalhador por meio da entrega de uma proposta inovadora.
+            <div class="col-lg-6 py-5 order-2 order-lg-1">
+              <div class=" mb-3">
+                <img class="title" src="images/visao.svg" alt="Visão" data-aos="fade-right">
+              </div>
+              <h6 class="c-primary fw-400 mb-0 " data-aos="fade-right">
+                Ser reconhecida como a empresa de consultoria referência em ajudar a solucionar questões de saúde e de
+                segurança do trabalho do trabalhador por meio da entrega de uma proposta inovadora.
               </h6>
             </div>
-            <div class="col-lg-6">
-              <img src="images/visao.png" class="img-fluid" alt="Visão" data-aos="fade-left">
+            <div class="col-lg-6 order-1 order-lg-2">
+              <div class="box">
+                <img src="images/visao.png" class="img-fluid parallax-img" data-speed="0.1" alt="Visão">
+              </div>
             </div>
           </div>
         </div>
@@ -303,27 +297,144 @@
     </section>
 
     <section id="valores">
-      <div class="top py-5">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col">
-              <div class="text-center mb-3">
-                <img class="title" src="images/valores.svg" alt="Valores" data-aos="fade-down">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="bottom py-3">
         <div class="container">
           <div class="row center-v">
             <div class="col-lg-6">
-              <img src="images/valores.png" class="img-fluid" alt="Valores" data-aos="fade-right">
+              <div class="box">
+                <img src="images/valores.png" class="img-fluid parallax-img" data-speed="0.1" alt="Valores">
+              </div>
             </div>
             <div class="col-lg-6 py-5">
-              <h6 class="c-primary fw-400 mb-0">
-                Trabalhamos com empatia, entrega, lealdade, compromisso e intensidade, prezando sempre a solução em saúde e o conhecimento técnico-legal.
+              <div class="mb-3">
+                <img class="title" src="images/valores.svg" alt="Valores" data-aos="fade-left">
+              </div>
+              <h6 class="c-primary fw-400 mb-0" data-aos="fade-left">
+                Trabalhamos com empatia, entrega, lealdade, compromisso e intensidade, prezando sempre a solução em
+                saúde e o conhecimento técnico-legal.
               </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pontos">
+      <div class="container">
+        <div class="row center-h py-5">
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z"
+                  fill="#384580" />
+              </svg>
+              <img class="title" src="images/empatia.svg" alt="empatia" data-aos="fade-left">
+              <div class="text">
+                <p class="c-primary">
+                  Mais do que um valor, é a <b>base de nossa abordagem.</b>
+                  <!-- Compreendemos profundamente as necessidades e desafios dos trabalhadores da área de saúde, proporcionando soluções personalizadas. -->
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z"
+                  fill="#384580" />
+              </svg>
+              <img class="title" src="images/entrega.svg" alt="entrega" data-aos="fade-left">
+              <div class="text">
+                <p class="c-primary">
+                  Entregamos mais que serviços: <b>resultados tangíveis.</b>
+                  <!-- A consultoria da Toledo & Lima é meticulosamente executada, visando resolver problemas de forma efetiva.  -->
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z"
+                  fill="#384580" />
+              </svg>
+              <img class="title" src="images/lealdade.svg" alt="lealdade" data-aos="fade-left">
+              <div class="text">
+                <p class="c-primary">
+                  Nos dedicamos a manter uma <b>relação de confiança duradoura</b> com nossos clientes.
+                  <!-- , garantindo que as soluções propostas estejam alinhadas com seus valores e objetivos. -->
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z"
+                  fill="#384580" />
+              </svg>
+              <img class="title" src="images/compromisso.svg" alt="compromisso" data-aos="fade-left">
+              <div class="text">
+                <p class="c-primary">
+                  Nosso compromisso vai <b>além do cumprimento de normas e regulamentos.</b>
+                  <!-- : contribuímos para a sua empresa ser um ambiente de trabalho resolutivo e saudável. -->
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z"
+                  fill="#384580" />
+              </svg>
+              <img class="title" src="images/intensidade.svg" alt="intensidade" data-aos="fade-left">
+              <div class="text">
+                <p class="c-primary">
+                  Abordamos os desafios de saúde com <b>intensidade e determinação.</b>
+                  <!-- Estamos prontos para enfrentar questões complexas e oferecer soluções eficazes que impactam positivamente tanto os empresários quanto os trabalhadores. -->
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z"
+                  fill="#384580" />
+              </svg>
+              <img class="title" src="images/solucao.svg" alt="solução" data-aos="fade-left">
+              <div class="text">
+                <p class="c-primary">
+                  Somos orientados para a solução, <b>focados em resolver problemas complexos</b> relacionados à saúde
+                  do trabalhador.
+                  <!-- Nossas soluções são inovadoras, diferenciadas e efetivas, proporcionando benefícios significativos às partes envolvidas. -->
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-10">
+            <div class="icon">
+              <svg viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z"
+                  fill="#384580" />
+              </svg>
+              <img class="title" src="images/conhecimento.svg" alt="conhecimento" data-aos="fade-left">
+              <div class="text">
+                <p class="c-primary">
+                  Possuímos um conhecimento profundo das <b>regulamentações, limitações e necessidades específicas</b>
+                  da área de saúde.
+                  <!-- Utilizamos esse conhecimento para fornecer orientação especializada, promovendo um ambiente de trabalho mais saudável e motivador. -->
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -332,40 +443,28 @@
 
     <section class="line"></section>
 
-    <section id="pontos">
+    <section id="escolha">
       <div class="container py-5">
-        <div class="row py-5">
-          <div class="col-md-6 col-sm-10">
-            <div class="icon">
-              <svg data-aos="fade-right" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z" fill="#384580"/>
-                </svg>
-                <img class="title" src="images/profissional.svg" alt="profissional">
+        <div class="row center-h py-4">
+          <div class="col-lg-8">
+            <div class="title text-center mb-3">
+              <img class="title" src="images/quem.svg" alt="Quem somos" data-aos="fade-down">
             </div>
-          </div>
-          <div class="col-md-6 col-sm-10">
-            <div class="icon">
-              <svg data-aos="fade-right" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z" fill="#384580"/>
-                </svg>
-                <img class="title" src="images/confiavel.svg" alt="">
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-10">
-            <div class="icon">
-              <svg data-aos="fade-right" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z" fill="#384580"/>
-                </svg>
-                <img class="title" src="images/experiente.svg" alt="">
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-10">
-            <div class="icon">
-              <svg data-aos="fade-right" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.1121 28.5927C14.2146 28.4584 14.3079 28.3439 14.3934 28.2233C17.0956 24.39 19.7961 20.5567 22.4975 16.7234C25.7479 12.1103 28.9984 7.49627 32.2514 2.88399C32.4157 2.65055 32.5835 2.41541 32.7784 2.20762C33.63 1.29611 34.6765 0.842924 35.9238 0.818127C37.8134 0.781359 39.6089 2.111 40.0978 4.02552C40.3868 5.15849 40.269 6.24871 39.7038 7.27822C39.5987 7.4689 39.4767 7.65104 39.3513 7.82889C33.7469 15.7871 28.1417 23.7444 22.5365 31.7017C21.0214 33.8531 19.5089 36.0053 17.9879 38.1524C17.7837 38.4406 17.5634 38.7236 17.3117 38.9682C15.6509 40.5826 13.0275 40.5894 11.3557 38.975C11.1998 38.8245 11.0549 38.6595 10.9176 38.491C7.7053 34.5526 4.49638 30.6115 1.28238 26.6739C0.714656 25.9787 0.352838 25.1912 0.271492 24.2985C0.152863 22.9945 0.524002 21.8342 1.41796 20.8714C2.12804 20.1069 3.00335 19.6512 4.04474 19.5332C5.55811 19.3622 6.81897 19.8649 7.82562 21.003C8.29421 21.5332 8.7272 22.0958 9.17461 22.6448C10.6981 24.514 12.2208 26.3849 13.7452 28.2532C13.8376 28.367 13.9164 28.4995 14.113 28.5901L14.1121 28.5927Z" fill="#384580"/>
-                </svg>
-                <img class="title" src="images/comprometida.svg" alt="">
-            </div>
+            <p class="c-primary">
+              Na Toledo & Lima, nosso compromisso é ser parceiro estratégico de confiança e ajudar a solucionar
+              problemas relacionados à saúde e segurança dos trabalhadores, impulsionando a excelência na gestão de
+              pessoas.
+            </p>
+            <p class="c-primary">
+
+              Como líderes em soluções de saúde ocupacional, combinamos expertise, além de uma abordagem integrada
+              e personalizada na consultoria T&L para dar suporte na resolução de desafios complexos e proteger tanto
+              as empresas quanto os colaboradores.
+            </p>
+            <p class="c-primary">
+              Nosso compromisso inabalável com a segurança e bem-estar ajuda a criar um ambiente produtivo e
+              confiável, estabelecendo um novo padrão de em consultoria para empresas de saúde.
+            </p>
           </div>
         </div>
       </div>
@@ -391,7 +490,7 @@
                 <input type="tel" class="form-control text-center" id="tel" placeholder="Telefone">
               </div>
               <div class="px-2 col-lg-2 col-md-3 col-sm-12">
-                <button type="submit" class="btn btn-primary h-100 w-100">
+                <button type="submit" class="btn btn-gradient h-100 w-100">
                   Fale conosco
                 </button>
               </div>
@@ -427,10 +526,10 @@
 
 
 
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var ver = document.getElementById('ver');
@@ -449,32 +548,82 @@
   <script>
     AOS.init({
       duration: 1500,
-      offset:-20
+      offset: 0
     });
   </script>
   <script>
-    window.addEventListener('scroll', function() {
-  const navSection = document.querySelector('.nav-section');
-  const scrollY = window.scrollY;
-  const maxScroll = 200; // Máximo de scroll para o efeito completo
-  let opacity = 0;
-  let blur = 0;
+    window.addEventListener('scroll', function () {
+      const navSection = document.querySelector('.nav-section');
+      const scrollY = window.scrollY;
+      const maxScroll = 200; // Máximo de scroll para o efeito completo
+      let opacity = 0;
+      let blur = 0;
 
-  if (scrollY <= maxScroll) {
-    opacity = 0.5 * (scrollY / maxScroll); // A opacidade agora para em 0.5
-    blur = 10 * (scrollY / maxScroll); // Desfoque aumenta com o scroll
-  } else {
-    opacity = 0.5; // Mantém a opacidade em 0.5 após 100 pixels de scroll
-    blur = 10; // Desfoque máximo após 100 pixels de scroll
-  }
+      if (scrollY <= maxScroll) {
+        opacity = 0.5 * (scrollY / maxScroll); // A opacidade agora para em 0.5
+        blur = 10 * (scrollY / maxScroll); // Desfoque aumenta com o scroll
+      } else {
+        opacity = 0.5; // Mantém a opacidade em 0.5 após 100 pixels de scroll
+        blur = 10; // Desfoque máximo após 100 pixels de scroll
+      }
 
-  navSection.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
-  navSection.style.backdropFilter = `blur(${blur}px)`;
-});
+      navSection.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+      navSection.style.backdropFilter = `blur(${blur}px)`;
+    });
+  </script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const parallaxImages = document.querySelectorAll('.parallax-img');
 
+      parallaxImages.forEach(img => {
+        // Lê a velocidade do parallax do atributo data-speed
+        const speed = parseFloat(img.getAttribute('data-speed')) ||
+        0.1; // Valor padrão se data-speed não estiver definido
 
+        const imgTop = img.offsetTop; // Distância do topo da página até a imagem
+        const scrollY = window.scrollY; // Posição atual do scroll
+        const windowHeight = window.innerHeight; // Altura da janela do navegador
+
+        // Distância da imagem em relação ao centro da tela
+        const imgCenterDistance = scrollY + windowHeight / 2 - (imgTop + img.clientHeight / 2);
+
+        // Calcula o deslocamento para o efeito parallax
+        const parallaxOffset = imgCenterDistance * speed;
+
+        // Aplica o deslocamento à imagem
+        img.style.transform = `translateY(${parallaxOffset}px)`;
+      });
+    });
   </script>
 
+  <script>
+    window.addEventListener('scroll', function () {
+      throttleParallax();
+    });
+
+    let lastScroll = 0;
+    const delay = 0; // Delay para o throttle (em milissegundos)
+
+    function updateParallax() {
+      const parallaxElements = document.querySelectorAll('.parallax-background');
+
+      parallaxElements.forEach(parallaxElement => {
+        const parallaxSpeed = parallaxElement.dataset.speed || -0.2; // Usa o data-speed ou um valor padrão
+        const scrollY = window.scrollY;
+        const parallaxOffset = scrollY * parallaxSpeed;
+
+        parallaxElement.style.backgroundPositionY = `${parallaxOffset}px`;
+      });
+    }
+
+    function throttleParallax() {
+      const currentScroll = window.scrollY;
+      if (Math.abs(currentScroll - lastScroll) > delay) {
+        updateParallax();
+        lastScroll = currentScroll;
+      }
+    }
+  </script>
 
 </body>
 

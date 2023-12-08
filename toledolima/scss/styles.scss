@@ -421,11 +421,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
   }
 
   &-v {
     display: flex;
     align-items: center;
+    align-content: center;
   }
 
   &-h {
