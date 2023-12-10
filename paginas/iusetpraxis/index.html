@@ -217,9 +217,9 @@
         <!-- <div class="col-lg-2  d-none d-lg-block"></div> -->
         <div class="col-xl-4 col-lg-5 col-md-5 col-sm-9">
           <div class="peticao">
-            <img src="imagens/peticao.jpg" alt="Petição Top Secret" class="img-fluid peticao-img">
-            <div class="peticao-box center-s" data-aos="zoom-out">
-              <span class="peticao-text">
+            <img src="imagens/peticao.jpg" alt="Petição Top Secret" class="img-fluid peticao-img parallax-img" data-speed="0.1">
+            <div class="peticao-box center-s" data-aos="zoom-out" >
+              <span class="peticao-text" onclick="location.href='#revolucao'">
                 TOP SECRET
               </span>
             </div>
@@ -277,37 +277,43 @@
     </div>
   </section>
 
-  <section id="guiar">
+  <section id="guiar" class="bg-primary-500">
     <div class="container py-5">
-      <div class="row mb-4 text-end">
+      <div class="row mb-4 text-end text-sm-start">
         <div class="col">
-          <h2 class="c-secondary fw-400 mb-3">
+          <h2 class="c-branco fw-400 mb-3">
             Quem irá<br>
             <b>guiar você</b>?
           </h2>
-          <p class="c-primary">
-            Conheça nosso especialista: <b>João Rezende</b>
+          <p class="c-secondary-200">
+            Conheça nosso especialista: <b class="c-branco">João Rezende</b>
           </p>
         </div>
       </div>
       <div class="row center-s">
         <div class="col-lg-4">
-          <img src="imagens/Foto-profissional.jpg" alt="foto" class="img-fluid">
+          <div class="img-box position-relative">
+            <img src="imagens/Foto-profissional.jpg" alt="foto" class="img-fluid parallax-im" data-speed="0.03">
+            <!-- <img src="imagens/foto-bg.jpg" alt="foto" class="img-fluid  parallax-img" data-speed="0.01"> -->
+            <!-- <img src="imagens/joao.png" alt="foto" class="img-fluid parallax-im" data-speed="0.05" style="inset: 0; scale: 1.2;"> -->
+          </div>
         </div>
         <div class="col-6">
-          <p class="c-secondary">
-            • Advogado criminalista em Brasília/DF com experiência no processo penal há mais de 9 anos
-          </p>
-          <p class="c-secondary">
-            • Formado pela Universidade de Brasília (UnB)
-          </p>
-          <p class="c-secondary">
-            • Foi professor universitário de prática penal do Núcleo de Prática Jurídica do UniCEUB (NPJ/UniCEUB)
-          </p>
-          <p class="c-secondary">
-            • Possui as 3 visões do processo penal: é advogado e trabalhou no MPF e no TJDFT, em gabinetes criminais de
-            Procurador da República e de Desembargador de Turma Criminal
-          </p>
+          <ul>
+            <li class="c-branco">
+              Advogado criminalista em Brasília/DF com experiência no processo penal há mais de 9 anos;
+            </li>
+            <li class="c-branco">
+              Formado pela Universidade de Brasília (UnB)
+            </li>
+            <li class="c-branco">
+              Foi professor universitário de prática penal do Núcleo de Prática Jurídica do UniCEUB (NPJ/UniCEUB)
+            </li>
+            <li class="c-branco mb-0">
+              Possui as 3 visões do processo penal: é advogado e trabalhou no MPF e no TJDFT, em gabinetes criminais de
+              Procurador da República e de Desembargador de Turma Criminal
+            </li>
+          </ul>
         </div>
 
       </div>
@@ -344,7 +350,7 @@
     </div>
   </section>
 
-  <section id="guiar">
+  <section id="revolucao">
     <div class="container py-5">
       <div class="row mb-4 center-h text-center">
         <div class="col-xl-6 col-lg-6 col-md-7">
@@ -408,6 +414,61 @@
       offset: -10
     });
   </script>
+
+
+<script>
+  window.addEventListener('scroll', function () {
+    const parallaxImages = document.querySelectorAll('.parallax-img');
+
+    parallaxImages.forEach(img => {
+      // Lê a velocidade do parallax do atributo data-speed
+      const speed = parseFloat(img.getAttribute('data-speed')) ||
+      0.1; // Valor padrão se data-speed não estiver definido
+
+      const imgTop = img.offsetTop; // Distância do topo da página até a imagem
+      const scrollY = window.scrollY; // Posição atual do scroll
+      const windowHeight = window.innerHeight; // Altura da janela do navegador
+
+      // Distância da imagem em relação ao centro da tela
+      const imgCenterDistance = scrollY + windowHeight / 2 - (imgTop + img.clientHeight / 2);
+
+      // Calcula o deslocamento para o efeito parallax
+      const parallaxOffset = imgCenterDistance * speed;
+
+      // Aplica o deslocamento à imagem
+      img.style.transform = `translateY(${parallaxOffset}px)`;
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener('scroll', function () {
+    throttleParallax();
+  });
+
+  let lastScroll = 0;
+  const delay = 0; // Delay para o throttle (em milissegundos)
+
+  function updateParallax() {
+    const parallaxElements = document.querySelectorAll('.parallax-background');
+
+    parallaxElements.forEach(parallaxElement => {
+      const parallaxSpeed = parallaxElement.dataset.speed || -0.2; // Usa o data-speed ou um valor padrão
+      const scrollY = window.scrollY;
+      const parallaxOffset = scrollY * parallaxSpeed;
+
+      parallaxElement.style.backgroundPositionY = `${parallaxOffset}px`;
+    });
+  }
+
+  function throttleParallax() {
+    const currentScroll = window.scrollY;
+    if (Math.abs(currentScroll - lastScroll) > delay) {
+      updateParallax();
+      lastScroll = currentScroll;
+    }
+  }
+</script>
 
 </body>
 

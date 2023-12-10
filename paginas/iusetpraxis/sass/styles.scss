@@ -238,6 +238,7 @@ body {
     &-box {
       position: absolute;
       inset: 0;
+      
     }
 
     &-text {
@@ -246,7 +247,23 @@ body {
       font-weight: 600;
       border: 5px solid var(--primary);
       padding: 0 1rem;
-      transform: rotate(-8deg)
+      transform: rotate(-8deg);
+      transition: all .3s ease-in-out;
+
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.05);
+      }
+      &:active{
+        transform: scale(1.05);
+      }
     }
+  }
+}
+
+#guiar{
+
+  .img-box{
+    overflow: hidden;
   }
 }
