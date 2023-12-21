@@ -1,4 +1,79 @@
 @charset "UTF-8";
+:root {
+  --primary-200:#e80000;
+  --primary-300:#b50000;
+  --primary:#820000;
+  --primary-500:#4f0000;
+  --primary-600:#1c0000;
+  --secondary-200:#7f7f7f;
+  --secondary-300:#666666;
+  --secondary:#4c4c4c;
+  --secondary-500:#333333;
+  --secondary-600:#191919;
+  --tertiary-200:#7f7f7f;
+  --tertiary-300:#666666;
+  --tertiary:#4c4c4c;
+  --tertiary-500:#333333;
+  --tertiary-600:#191919;
+  --accent-200:#7f7f7f;
+  --accent-300:#666666;
+  --accent:#4c4c4c;
+  --accent-500:#333333;
+  --accent-600:#191919;
+  --alternate-200:#7f7f7f;
+  --alternate-300:#666666;
+  --alternate:#4c4c4c;
+  --alternate-500:#333333;
+  --alternate-600:#191919;
+  --branco:#FFF;
+  --cinza-50: #f0f0f0;
+  --cinza-100:#d7d7d7;
+  --cinza-200:#bdbdbd;
+  --cinza-300:#a4a4a4;
+  --cinza-400:#8a8a8a;
+  --cinza-500:#777777;
+  --cinza-600:#5e5e5e;
+  --cinza-700:#444444;
+  --cinza-800:#2b2b2b;
+  --cinza-900:#111;
+  --preto:#000;
+  --transparente: rgba(0, 0, 0, 0);
+  --font-primary: "Fira Sans", sans-serif;
+  --font-secondary: "Amagro", serif;
+  --size-0: 0rem;
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 1rem;
+  --size-4: 1.5rem;
+  --size-5: 3rem;
+  /* @link https://utopia.fyi/type/calculator?c=320,16,1.15,1240,18,1.2,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  /* font-size -2: 12.10px → 12.50px */
+  --font-size-minor: clamp(0.76rem, 0.75rem + 0.04vw, 0.78rem);
+  /* font-size -1: 13.91px → 15.00px */
+  --font-size-small: clamp(0.87rem, 0.85rem + 0.12vw, 0.94rem);
+  /* font-size 0: 16.00px → 18.00px */
+  --font-size-base: clamp(1.00rem, 0.96rem + 0.22vw, 1.13rem);
+  /* font-size 1: 18.40px → 21.60px */
+  --font-size-6: clamp(1.15rem, 1.08rem + 0.35vw, 1.35rem);
+  /* font-size 2: 21.16px → 25.92px */
+  --font-size-5: clamp(1.32rem, 1.22rem + 0.52vw, 1.62rem);
+  /* font-size 3: 24.33px → 31.10px */
+  --font-size-4: clamp(1.52rem, 1.37rem + 0.74vw, 1.94rem);
+  /* font-size 4: 27.98px → 37.32px */
+  --font-size-3: clamp(1.75rem, 1.55rem + 1.02vw, 2.33rem);
+  /* font-size 5: 32.18px → 44.79px */
+  --font-size-2: clamp(2.01rem, 1.74rem + 1.37vw, 2.80rem);
+  /* font-size 6: 37.01px → 53.75px */
+  --font-size-1: clamp(2.31rem, 1.95rem + 1.82vw, 3.36rem);
+  --transparente: rgba(0, 0, 0, 0);
+  --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
+  --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
+  --box-shadow-1: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --box-shadow-2: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --box-shadow-3: 0 16px 32px rgba(0, 0, 0, 0.1);
+  --box-shadow-4: 0 24px 48px rgba(0, 0, 0, 0.1);
+}
+
 /* COR DAS FONTES */
 .c-primary {
   color: var(--primary) !important;
@@ -76,19 +151,19 @@
   color: var(--alternate-600) !important;
 }
 .c-cinza-200 {
-  color: var(--cinza-200) !important;
+  color: #bdbdbd !important;
 }
 .c-cinza-300 {
-  color: var(--cinza-300) !important;
+  color: #a4a4a4 !important;
 }
 .c-cinza-400 {
-  color: var(--cinza-400) !important;
+  color: #8a8a8a !important;
 }
 .c-cinza-500 {
-  color: var(--cinza-500) !important;
+  color: #777777 !important;
 }
 .c-cinza-600 {
-  color: var(--cinza-600) !important;
+  color: #5e5e5e !important;
 }
 .c-branco {
   color: #FFF !important;
@@ -174,19 +249,19 @@
   background-color: var(--alternate-600) !important;
 }
 .bg-cinza-200 {
-  background-color: var(--cinza-200) !important;
+  background-color: #bdbdbd !important;
 }
 .bg-cinza-300 {
-  background-color: var(--cinza-300) !important;
+  background-color: #a4a4a4 !important;
 }
 .bg-cinza-400 {
-  background-color: var(--cinza-400) !important;
+  background-color: #8a8a8a !important;
 }
 .bg-cinza-500 {
-  background-color: var(--cinza-500) !important;
+  background-color: #777777 !important;
 }
 .bg-cinza-600 {
-  background-color: var(--cinza-600) !important;
+  background-color: #5e5e5e !important;
 }
 .bg-branco {
   background-color: #FFF !important;
@@ -272,19 +347,19 @@
   fill: var(--alternate-600) !important;
 }
 .fill-cinza-200 {
-  fill: var(--cinza-200) !important;
+  fill: #bdbdbd !important;
 }
 .fill-cinza-300 {
-  fill: var(--cinza-300) !important;
+  fill: #a4a4a4 !important;
 }
 .fill-cinza-400 {
-  fill: var(--cinza-400) !important;
+  fill: #8a8a8a !important;
 }
 .fill-cinza-500 {
-  fill: var(--cinza-500) !important;
+  fill: #777777 !important;
 }
 .fill-cinza-600 {
-  fill: var(--cinza-600) !important;
+  fill: #5e5e5e !important;
 }
 .fill-branco {
   fill: #FFF !important;
@@ -371,19 +446,19 @@
   border-color: var(--alternate-600) !important;
 }
 .border-cinza-200 {
-  border-color: var(--cinza-200) !important;
+  border-color: #bdbdbd !important;
 }
 .border-cinza-300 {
-  border-color: var(--cinza-300) !important;
+  border-color: #a4a4a4 !important;
 }
 .border-cinza-400 {
-  border-color: var(--cinza-400) !important;
+  border-color: #8a8a8a !important;
 }
 .border-cinza-500 {
-  border-color: var(--cinza-500) !important;
+  border-color: #777777 !important;
 }
 .border-cinza-600 {
-  border-color: var(--cinza-600) !important;
+  border-color: #5e5e5e !important;
 }
 .border-branco {
   border-color: #FFF !important;
@@ -431,6 +506,12 @@
 }
 
 /* PESO DAS FONTES */
+.f-1 {
+  font-family: var(--font-primary);
+}
+.f-2 {
+  font-family: var(--font-secondary);
+}
 .fw-100 {
   font-weight: 100 !important;
 }
@@ -537,6 +618,20 @@
   filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.2));
 }
 
+/* BOX SHADOW */
+.shadow-1 {
+  box-shadow: var(--box-shadow-1);
+}
+.shadow-2 {
+  box-shadow: var(--box-shadow-2);
+}
+.shadow-3 {
+  box-shadow: var(--box-shadow-3);
+}
+.shadow-4 {
+  box-shadow: var(--box-shadow-4);
+}
+
 /* ALINHAMENTO */
 .center-s {
   display: flex !important;
@@ -611,80 +706,6 @@ p {
   white-space: nowrap;
 }
 
-:root {
-  --primary-200:#e80000;
-  --primary-300:#b50000;
-  --primary:#820000;
-  --primary-500:#4f0000;
-  --primary-600:#1c0000;
-  --secondary-200:#7f7f7f;
-  --secondary-300:#666666;
-  --secondary:#4c4c4c;
-  --secondary-500:#333333;
-  --secondary-600:#191919;
-  --tertiary-200:#7f7f7f;
-  --tertiary-300:#666666;
-  --tertiary:#4c4c4c;
-  --tertiary-500:#333333;
-  --tertiary-600:#191919;
-  --accent-200:#7f7f7f;
-  --accent-300:#666666;
-  --accent:#4c4c4c;
-  --accent-500:#333333;
-  --accent-600:#191919;
-  --alternate-200:#7f7f7f;
-  --alternate-300:#666666;
-  --alternate:#4c4c4c;
-  --alternate-500:#333333;
-  --alternate-600:#191919;
-  --branco:var(--branco);
-  --cinza-50: #f0f0f0;
-  --cinza-100:#d7d7d7;
-  --cinza-200:var(--cinza-200);
-  --cinza-300:var(--cinza-300);
-  --cinza-400:var(--cinza-400);
-  --cinza-500:var(--cinza-500);
-  --cinza-600:var(--cinza-600);
-  --cinza-700:var(--cinza-700);
-  --cinza-800:var(--cinza-800);
-  --cinza-900:var(--cinza-900);
-  --preto:var(--preto);
-  --transparente: rgba(0, 0, 0, 0);
-  --font-primary: "Fira Sans", sans-serif;
-  --size-0: 0rem;
-  --size-1: 0.25rem;
-  --size-2: 0.5rem;
-  --size-3: 1rem;
-  --size-4: 1.5rem;
-  --size-5: 3rem;
-  /* @link https://utopia.fyi/type/calculator?c=320,16,1.15,1240,18,1.2,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-  /* font-size -2: 12.10px → 12.50px */
-  --font-size-minor: clamp(0.76rem, 0.75rem + 0.04vw, 0.78rem);
-  /* font-size -1: 13.91px → 15.00px */
-  --font-size-small: clamp(0.87rem, 0.85rem + 0.12vw, 0.94rem);
-  /* font-size 0: 16.00px → 18.00px */
-  --font-size-base: clamp(1.00rem, 0.96rem + 0.22vw, 1.13rem);
-  /* font-size 1: 18.40px → 21.60px */
-  --font-size-6: clamp(1.15rem, 1.08rem + 0.35vw, 1.35rem);
-  /* font-size 2: 21.16px → 25.92px */
-  --font-size-5: clamp(1.32rem, 1.22rem + 0.52vw, 1.62rem);
-  /* font-size 3: 24.33px → 31.10px */
-  --font-size-4: clamp(1.52rem, 1.37rem + 0.74vw, 1.94rem);
-  /* font-size 4: 27.98px → 37.32px */
-  --font-size-3: clamp(1.75rem, 1.55rem + 1.02vw, 2.33rem);
-  /* font-size 5: 32.18px → 44.79px */
-  --font-size-2: clamp(2.01rem, 1.74rem + 1.37vw, 2.80rem);
-  /* font-size 6: 37.01px → 53.75px */
-  --font-size-1: clamp(2.31rem, 1.95rem + 1.82vw, 3.36rem);
-  --transparente: rgba(0, 0, 0, 0);
-  --transition-1: all 0.3s cubic-bezier(0.6, -0.10, 0.4, 1.10);
-  --transition-2: all 0.5s cubic-bezier(0.6, -0.10, 0.4, 1.10);
-  --box-shadow-1: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --box-shadow-2: 0 8px 16px rgba(0, 0, 0, 0.1);
-  --box-shadow-3: 0 16px 32px rgba(0, 0, 0, 0.1);
-  --box-shadow-4: 0 24px 48px rgba(0, 0, 0, 0.1);
-}
-
 /* 
 --------------------------------
 GERAIS
@@ -705,6 +726,7 @@ body {
 #home {
   background-image: url(../imagens/bg-light.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 #home .peticao {
   box-shadow: var(--box-shadow-4);
@@ -739,6 +761,90 @@ body {
   transform: scale(1.05);
 }
 
+#participar .card {
+  height: 100%;
+  box-shadow: var(--box-shadow-1);
+  border: 0.5px solid var(--secondary);
+  transition: all 0.3s ease-in-out;
+  border-radius: 0px !important;
+}
+#participar .cards {
+  --bs-gutter-x: 1rem;
+  row-gap: 1rem;
+}
+#participar .card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow-2);
+  border-color: var(--primary);
+}
+#participar .card:hover svg {
+  fill: var(--primary);
+}
+#participar .card:hover p {
+  color: var(--preto) !important;
+}
+#participar .card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+#participar .card-icon {
+  width: 45px;
+}
+#participar .card-icon svg {
+  transition: all 0.3s ease-in-out;
+  fill: var(--secondary);
+}
+
+#guiar {
+  background-image: url(../imagens/bg-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 #guiar .img-box {
   overflow: hidden;
+}
+#guiar .box {
+  padding: 2rem;
+  border: 0.5px solid var(--branco);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+#guiar ul {
+  padding-left: 20px;
+  list-style: none;
+  margin-bottom: 0px;
+}
+#guiar ul li {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+#guiar ul li:before {
+  font-family: "FontAwesome";
+  content: "\f054";
+  content: "\f0da";
+  margin: 0 5px 0 -15px;
+  font-size: 1.2rem;
+}
+
+#para .list {
+  row-gap: 1rem;
+}
+#para .icon {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+#para .icon svg {
+  --icon-size:60px;
+  min-width: var(--icon-size);
+  max-width: var(--icon-size);
+  fill: var(--primary);
+}
+
+#revolucao {
+  background-image: url(../imagens/bg-light.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }/*# sourceMappingURL=styles.css.map */
