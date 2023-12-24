@@ -28,14 +28,14 @@
   --branco:#FFF;
   --cinza-50: #f0f0f0;
   --cinza-100:#d7d7d7;
-  --cinza-200:var(--cinza-200);
-  --cinza-300:var(--cinza-300);
-  --cinza-400:var(--cinza-400);
-  --cinza-500:var(--cinza-500);
-  --cinza-600:var(--cinza-600);
-  --cinza-700:var(--cinza-700);
-  --cinza-800:var(--cinza-800);
-  --cinza-900:var(--cinza-900);
+  --cinza-200:#bdbdbd;
+  --cinza-300:#a4a4a4;
+  --cinza-400:#8a8a8a;
+  --cinza-500:#777777;
+  --cinza-600:#5e5e5e;
+  --cinza-700:#444444;
+  --cinza-800:#2b2b2b;
+  --cinza-900:#111;
   --preto:#000;
   --transparente: rgba(0, 0, 0, 0);
   --font-primary: "Fira Sans", sans-serif;
@@ -151,19 +151,19 @@
   color: var(--alternate-600) !important;
 }
 .c-cinza-200 {
-  color: var(--cinza-200) !important;
+  color: #bdbdbd !important;
 }
 .c-cinza-300 {
-  color: var(--cinza-300) !important;
+  color: #a4a4a4 !important;
 }
 .c-cinza-400 {
-  color: var(--cinza-400) !important;
+  color: #8a8a8a !important;
 }
 .c-cinza-500 {
-  color: var(--cinza-500) !important;
+  color: #777777 !important;
 }
 .c-cinza-600 {
-  color: var(--cinza-600) !important;
+  color: #5e5e5e !important;
 }
 .c-branco {
   color: #FFF !important;
@@ -249,19 +249,19 @@
   background-color: var(--alternate-600) !important;
 }
 .bg-cinza-200 {
-  background-color: var(--cinza-200) !important;
+  background-color: #bdbdbd !important;
 }
 .bg-cinza-300 {
-  background-color: var(--cinza-300) !important;
+  background-color: #a4a4a4 !important;
 }
 .bg-cinza-400 {
-  background-color: var(--cinza-400) !important;
+  background-color: #8a8a8a !important;
 }
 .bg-cinza-500 {
-  background-color: var(--cinza-500) !important;
+  background-color: #777777 !important;
 }
 .bg-cinza-600 {
-  background-color: var(--cinza-600) !important;
+  background-color: #5e5e5e !important;
 }
 .bg-branco {
   background-color: #FFF !important;
@@ -347,19 +347,19 @@
   fill: var(--alternate-600) !important;
 }
 .fill-cinza-200 {
-  fill: var(--cinza-200) !important;
+  fill: #bdbdbd !important;
 }
 .fill-cinza-300 {
-  fill: var(--cinza-300) !important;
+  fill: #a4a4a4 !important;
 }
 .fill-cinza-400 {
-  fill: var(--cinza-400) !important;
+  fill: #8a8a8a !important;
 }
 .fill-cinza-500 {
-  fill: var(--cinza-500) !important;
+  fill: #777777 !important;
 }
 .fill-cinza-600 {
-  fill: var(--cinza-600) !important;
+  fill: #5e5e5e !important;
 }
 .fill-branco {
   fill: #FFF !important;
@@ -446,19 +446,19 @@
   border-color: var(--alternate-600) !important;
 }
 .border-cinza-200 {
-  border-color: var(--cinza-200) !important;
+  border-color: #bdbdbd !important;
 }
 .border-cinza-300 {
-  border-color: var(--cinza-300) !important;
+  border-color: #a4a4a4 !important;
 }
 .border-cinza-400 {
-  border-color: var(--cinza-400) !important;
+  border-color: #8a8a8a !important;
 }
 .border-cinza-500 {
-  border-color: var(--cinza-500) !important;
+  border-color: #777777 !important;
 }
 .border-cinza-600 {
-  border-color: var(--cinza-600) !important;
+  border-color: #5e5e5e !important;
 }
 .border-branco {
   border-color: #FFF !important;
@@ -485,6 +485,9 @@
 .border-5 {
   border-style: solid !important;
   border-width: 5px !important;
+}
+.border-radius-0 {
+  border-radius: 0rem !important;
 }
 .border-radius-05 {
   border-radius: 0.5rem !important;
@@ -548,14 +551,16 @@
   transition: 0.5s all ease-in-out;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
-  background-color: var(--secondary);
-  border-color: var(--primary);
+  background-color: var(--primary-500);
+  border-color: var(--primary-500);
 }
 .btn-primary:focus-visible {
   outline: var(--accent) auto 1px;
 }
 .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--accent);
+  background-color: var(--primary-600);
+  border-color: var(--primary-600);
+  box-shadow: 0 0 0.25rem 0 var(--primary);
 }
 .btn-outline-primary {
   font-size: var(--font-geral);
@@ -597,11 +602,11 @@
   transition: all 0.3s ease-in-out;
 }
 .btn-click:hover {
-  transform: translateX(2px) translateY(2px);
+  transform: translateX(0px) translateY(2px);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .btn-click:active {
-  transform: translateX(4px) translateY(4px);
+  transform: translateX(0px) translateY(4px);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
 }
 .btn-click-img {

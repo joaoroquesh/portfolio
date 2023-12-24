@@ -486,6 +486,9 @@
   border-style: solid !important;
   border-width: 5px !important;
 }
+.border-radius-0 {
+  border-radius: 0rem !important;
+}
 .border-radius-05 {
   border-radius: 0.5rem !important;
 }
@@ -548,14 +551,16 @@
   transition: 0.5s all ease-in-out;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary:hover {
-  background-color: var(--secondary);
-  border-color: var(--primary);
+  background-color: var(--primary-500);
+  border-color: var(--primary-500);
 }
 .btn-primary:focus-visible {
   outline: var(--accent) auto 1px;
 }
 .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--accent);
+  background-color: var(--primary-600);
+  border-color: var(--primary-600);
+  box-shadow: 0 0 0.25rem 0 var(--primary);
 }
 .btn-outline-primary {
   font-size: var(--font-geral);
@@ -597,11 +602,11 @@
   transition: all 0.3s ease-in-out;
 }
 .btn-click:hover {
-  transform: translateX(2px) translateY(2px);
+  transform: translateX(0px) translateY(2px);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .btn-click:active {
-  transform: translateX(4px) translateY(4px);
+  transform: translateX(0px) translateY(4px);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
 }
 .btn-click-img {
@@ -837,7 +842,7 @@ body {
   gap: 0.75rem;
 }
 #para .icon svg {
-  --icon-size:60px;
+  --icon-size: 60px;
   min-width: var(--icon-size);
   max-width: var(--icon-size);
   fill: var(--primary);
@@ -847,4 +852,71 @@ body {
   background-image: url(../imagens/bg-light.jpg);
   background-size: cover;
   background-attachment: fixed;
+}
+#revolucao .login-box {
+  padding: 2rem;
+  background: var(--secondary);
+  background-image: url(../imagens/bg-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+#revolucao .login-box .inputGroup {
+  position: relative;
+}
+#revolucao .login-box .inputGroup input {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 1rem;
+  border: none;
+  border: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+#revolucao .login-box .inputGroup input:focus {
+  box-shadow: 0 0 0.3rem 0 var(--primary);
+}
+#revolucao .login-box .inputGroup label {
+  top: -20px;
+  left: 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+#footer .small {
+  font-size: 0.8rem !important;
+  font-weight: bold;
+}
+#footer a {
+  text-decoration: none;
+  color: var(--primary) !important;
+  position: relative;
+}
+#footer a:hover span {
+  opacity: 1;
+}
+#footer a:hover span.jroque {
+  right: -66px;
+}
+#footer a span {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  will-change: opacity;
+  position: absolute;
+  white-space: nowrap;
+  top: 0px;
+}
+#footer a span.jroque {
+  right: -45px;
+}
+#footer a svg {
+  height: 30px;
+  width: 30px;
+  margin-top: -2px;
+  fill: var(--primary);
 }/*# sourceMappingURL=styles.css.map */

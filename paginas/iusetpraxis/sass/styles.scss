@@ -131,6 +131,7 @@ body {
   .peticao {
     box-shadow: $box-shadow-4;
     transform: rotate(5deg) scale(1.01);
+
     @media (max-width:992px) {
       transform: rotate(5deg) scale(.85);
     }
@@ -142,7 +143,7 @@ body {
     &-box {
       position: absolute;
       inset: 0;
-      
+
     }
 
     &-text {
@@ -155,50 +156,56 @@ body {
       transition: all .3s ease-in-out;
 
       cursor: pointer;
-      &:hover{
+
+      &:hover {
         transform: scale(1.05);
       }
-      &:active{
+
+      &:active {
         transform: scale(1.05);
       }
     }
   }
 }
 
-#participar{
+#participar {
 
-  .card{
-    &s{
+  .card {
+    &s {
       --bs-gutter-x: 1rem;
       row-gap: 1rem;
     }
+
     height: 100%;
     box-shadow: var(--box-shadow-1);
     border: .5px solid $secondary;
     transition: all .3s ease-in-out;
-    border-radius: 0px!important;
+    border-radius: 0px !important;
 
-    &:hover{
+    &:hover {
       transform: translateY(-2px);
       box-shadow: var(--box-shadow-2);
       border-color: $primary;
 
-      svg{
+      svg {
         fill: $primary;
       }
-      p{
-        color: $preto!important;
+
+      p {
+        color: $preto !important;
       }
     }
-    
-    &-title{
+
+    &-title {
       display: flex;
       align-items: center;
       gap: .75rem;
     }
-    &-icon{
+
+    &-icon {
       width: 45px;
-      svg{
+
+      svg {
         transition: all .3s ease-in-out;
         fill: $secondary;
       }
@@ -206,50 +213,55 @@ body {
   }
 }
 
-#guiar{
-background-image: url(../imagens/bg-dark.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
+#guiar {
+  background-image: url(../imagens/bg-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
-  .img-box{
+  .img-box {
     overflow: hidden;
   }
 
-  .box{
+  .box {
     padding: 2rem;
     border: .5px solid $branco;
     backdrop-filter: blur(2px);
   }
-  ul { 
-    padding-left:20px; 
-    list-style:none; 
+
+  ul {
+    padding-left: 20px;
+    list-style: none;
     margin-bottom: 0px;
-    li { 
-      margin-bottom: .75rem; 
+
+    li {
+      margin-bottom: .75rem;
       font-size: 1.25rem;
-      &:before {    
-          font-family: 'FontAwesome';
-          content: '\f054';
-          content: '\f0da';
-          margin:0 5px 0 -15px;
-          font-size: 1.2rem;
+
+      &:before {
+        font-family: 'FontAwesome';
+        content: '\f054';
+        content: '\f0da';
+        margin: 0 5px 0 -15px;
+        font-size: 1.2rem;
       }
     }
   }
 }
 
-#para{
+#para {
 
-  .list{
+  .list {
     row-gap: 1rem;
   }
-  .icon{
+
+  .icon {
     display: flex;
     align-items: center;
     gap: .75rem;
-    svg{
-      --icon-size:60px;
+
+    svg {
+      --icon-size: 60px;
       min-width: var(--icon-size);
       max-width: var(--icon-size);
       fill: $primary;
@@ -257,8 +269,98 @@ background-attachment: fixed;
   }
 }
 
-#revolucao{
+#revolucao {
   background-image: url(../imagens/bg-light.jpg);
   background-size: cover;
   background-attachment: fixed;
+
+
+
+  .login-box {
+    padding: 2rem;
+    background: $secondary;
+    background-image: url(../imagens/bg-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+
+    .inputGroup {
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 10px;
+        color: #fff;
+        margin-bottom: 1rem;
+        border: none;
+        border: 1px solid #fff;
+        outline: none;
+        background: transparent;
+
+        &:focus {
+          box-shadow: 0 0 .3rem 0 $primary;
+        }
+
+      }
+
+      label {
+        top: -20px;
+        left: 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+      }
+
+    }
+
+  }
+
+
+
+}
+
+#footer {
+  .small {
+    font-size: .8rem !important;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary !important;
+    position: relative;
+
+    &:hover {
+      span {
+        opacity: 1;
+
+        &.jroque {
+          right: -66px;
+        }
+      }
+    }
+
+    span {
+      opacity: 0;
+      transition: all .3s ease-in-out;
+      will-change: opacity;
+      position: absolute;
+      white-space: nowrap;
+      top: 0px;
+
+      &.jroque {
+        right: -45px;
+      }
+    }
+
+    svg {
+      height: 30px;
+      width: 30px;
+      margin-top: -2px;
+      fill: $primary;
+    }
+  }
 }
