@@ -1,8 +1,456 @@
 
 @font-face {
-    font-family: 'Fabulous', serif;
-    src: url('NT-Fabulous.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'NT-Fabulous';
+    src: url('NT-Fabulous.woff2') format('woff2'), /* Modern Browsers */
+         url('NT-Fabulous.woff') format('woff'); /* Older Browsers */
     font-style: normal;
+    font-weight: 400;
 }
 
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: italic;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: italic;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: italic;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'NT-Fabulous', serif;
+    src: url('NT-Fabulous.woff');
+    font-style: italic;
+    font-weight: 900;
+}
+
+/* @font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/58b2543abe9187bb7f592b6bcdbf20d7.woff2);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/58f54a311b5a192a877760be1fb967f0.woff2);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/7fc196620a6aa1a3fc96d0e4afd399c2.woff2);
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/fd7ead69e11ee1524ab39d21dd5b2895.woff2);
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/edc5ef6407f2e2e0713337f40bb724fd.woff2);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/2c4fcd6fc24a087cc0c8ff02cf8b5192.woff2);
+    font-style: italic;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/edc5ef6407f2e2e0713337f40bb724fd.woff2);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/2c4fcd6fc24a087cc0c8ff02cf8b5192.woff2);
+    font-style: italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/edc5ef6407f2e2e0713337f40bb724fd.woff2);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/2c4fcd6fc24a087cc0c8ff02cf8b5192.woff2);
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/090eec0b04c884d45c94e4bf7323abee.woff2);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/88f43e190f2d63cb35893c4c40d52c7e.woff2);
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/a0efd1b7e3b07721952090abbbc06704.woff2);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/a9ba116a1550a7bb068e6f55ac5cc438.woff2);
+    font-style: italic;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/1008e08acb59657af13d7240eb373a33.woff2);
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/def419ea5339a2679ef14ecab0d3557a.woff2);
+    font-style: italic;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/1008e08acb59657af13d7240eb373a33.woff2);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-1;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/def419ea5339a2679ef14ecab0d3557a.woff2);
+    font-style: italic;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/226618464330c99b64fcaf1d7142c1e7.woff2);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/e532966f486645f74efaf7432e1d01c2.woff2);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/3caeb8725430f400cbc24c4707d72558.woff2);
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/64dfd027222a62438bc2a4d821786c71.woff2);
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/01bb491de5070339bf99832ce44c544d.woff2);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/a75cdabbb8dcdf033cc6b207c91608bf.woff2);
+    font-style: italic;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/01bb491de5070339bf99832ce44c544d.woff2);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/a75cdabbb8dcdf033cc6b207c91608bf.woff2);
+    font-style: italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/01bb491de5070339bf99832ce44c544d.woff2);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/a75cdabbb8dcdf033cc6b207c91608bf.woff2);
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/226618464330c99b64fcaf1d7142c1e7.woff2);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/3caeb8725430f400cbc24c4707d72558.woff2);
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/e532966f486645f74efaf7432e1d01c2.woff2);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/64dfd027222a62438bc2a4d821786c71.woff2);
+    font-style: italic;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/a26fb2e545ea4d91b9808446bd10482b.woff2);
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/93216375a15a0334d096957c3f1f2f0f.woff2);
+    font-style: italic;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/a26fb2e545ea4d91b9808446bd10482b.woff2);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: YAFdJt8dAY0-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/93216375a15a0334d096957c3f1f2f0f.woff2);
+    font-style: italic;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/226618464330c99b64fcaf1d7142c1e7.woff2);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/e532966f486645f74efaf7432e1d01c2.woff2);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/3caeb8725430f400cbc24c4707d72558.woff2);
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/64dfd027222a62438bc2a4d821786c71.woff2);
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/226618464330c99b64fcaf1d7142c1e7.woff2);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/3caeb8725430f400cbc24c4707d72558.woff2);
+    font-style: italic;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/226618464330c99b64fcaf1d7142c1e7.woff2);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/3caeb8725430f400cbc24c4707d72558.woff2);
+    font-style: italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/226618464330c99b64fcaf1d7142c1e7.woff2);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/3caeb8725430f400cbc24c4707d72558.woff2);
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: YAD7QhG2T6o-0;
+    src: url(https://ysllamannuella.my.canva.site/toledoelima/fonts/226618464330c99b64fcaf1d7142c1e7.woff2);
+    font-style: normal;
+    font-weight: 500;
+} */

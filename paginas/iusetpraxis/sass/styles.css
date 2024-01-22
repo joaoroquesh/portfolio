@@ -832,6 +832,12 @@ body {
   margin: 0 5px 0 -15px;
   font-size: 1.2rem;
 }
+#guiar .imgs {
+  transition: 0.3s all ease-in-out;
+}
+#guiar .imgs:hover {
+  scale: 1.1;
+}
 
 #para .list {
   row-gap: 1rem;

@@ -1,13 +1,8 @@
 @import "colors";
-@font-face {
-  font-family: 'Fabulous', serif;
-  src: url('../font/NT-Fabulous.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 :root {
   --font-primary: 'Open Sans', sans-serif;
-  --font-secondary: 'Fabulous', serif;
+  --font-secondary: 'NT-Fabulous', serif;
 
   --size-0:0rem;
   --size-1:0.25rem;
@@ -83,6 +78,7 @@ body {
 
 .ft-2 {
   font-family: $ft-2;
+  //font-family: 'NT-Fabulous', serif;
 }
 
 .small {
@@ -137,6 +133,10 @@ body {
     color: $accent !important;
   }
 
+  &-branco {
+    color: $branco !important;
+  }
+
   &-cinza-100 {
     color: $cinza-100 !important;
   }
@@ -187,6 +187,10 @@ body {
 
   &-accent {
     background-color: $accent !important;
+  }
+
+  &-branco {
+    background-color: $branco !important;
   }
 
   &-cinza-100 {

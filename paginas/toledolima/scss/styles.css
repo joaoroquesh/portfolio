@@ -29,15 +29,9 @@
   --transparente:rgba(0,0,0,0);
 }
 
-@font-face {
-  font-family: "Fabulous", serif;
-  src: url("../font/NT-Fabulous.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
 :root {
   --font-primary: "Open Sans", sans-serif;
-  --font-secondary: "Fabulous", serif;
+  --font-secondary: "NT-Fabulous", serif;
   --size-0:0rem;
   --size-1:0.25rem;
   --size-2:0.5rem;
@@ -135,6 +129,9 @@ body {
 .c-accent {
   color: var(--accent) !important;
 }
+.c-branco {
+  color: #FFF !important;
+}
 .c-cinza-100 {
   color: #d7d7d7 !important;
 }
@@ -172,6 +169,9 @@ body {
 }
 .bg-accent {
   background-color: var(--accent) !important;
+}
+.bg-branco {
+  background-color: #FFF !important;
 }
 .bg-cinza-100 {
   background-color: #d7d7d7 !important;
