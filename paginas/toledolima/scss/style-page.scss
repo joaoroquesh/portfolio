@@ -18,10 +18,18 @@ $ft-2:var(--font-secondary);
     //transition: .3s all ease-in-out;
 }
 
-.bg-marmore{
-    background-image: url(../images/marmore.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+
+
+.bg {
+    &-azul {}
+
+    &-gold {}
+
+    &-marmore {
+        background-image: url(../images/marmore.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
 
 .title {
@@ -162,14 +170,14 @@ $ft-2:var(--font-secondary);
 
         &-brand {
             position: relative;
-    
+
             &:after {
                 --size: 15vw;
                 content: '';
                 position: absolute;
                 top: calc(50% - 2px);
-                left: calc(-1*var( --size) - 1rem);
-                width: var( --size);
+                left: calc(-1*var(--size) - 1rem);
+                width: var(--size);
                 height: 4px;
                 background-color: $accent;
                 background-image: url(../images/gold.png);
@@ -177,13 +185,15 @@ $ft-2:var(--font-secondary);
                 background-size: cover;
 
                 @media (min-width:1700px) {
-                    --size:30vw;
+                    --size: 30vw;
                 }
+
                 @media (max-width:600px) {
-                    left: calc(-1*var( --size) - .5rem);
-                    --size:10vw;
+                    left: calc(-1*var(--size) - .5rem);
+                    --size: 10vw;
                 }
             }
+
             @media (max-width:992px) {
                 margin-left: 1.5rem;
                 margin-bottom: 1rem !important;
@@ -288,12 +298,30 @@ $ft-2:var(--font-secondary);
     background-image: url(../images/marmore.jpg);
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 
+    .logo-tl {
+        opacity: 0.15;
+        scale: 1.2;
+        translate: -10%;
+    
+        @media (max-width:992px) {
+            max-width: 25%;
+            scale: 1;
+            translate: 0;
+            position: absolute;
+            right: 0;
+            top: 3rem;
+        }
+        @media (max-width:576px) {
+            max-width: 30%;
+        }
+    }
 }
 
-#principios{
+#principios {
 
-    .card-box{
+    .card-box {
         text-align: center;
         border: 4px solid $primary;
         height: 100%;
@@ -301,22 +329,59 @@ $ft-2:var(--font-secondary);
         padding-top: 3rem;
         position: relative;
 
-        .icon{
+        .icon {
             position: absolute;
             top: -27.5px;
             right: 50%;
             transform: translateX(50%);
             background: $accent;
-            padding: 0.825rem;        
+            padding: 0.825rem;
             border-radius: 100px;
             height: 55px;
             width: 55px;
         }
     }
+
+    .line-gold{
+        position: relative;
+        &:after {
+            --size: 50vw;
+            content: '';
+            position: absolute;
+            top: calc(50% - 2px);
+            left: calc(-1*var(--size) - 1rem);
+            width: var(--size);
+            height: 4px;
+            background-color: $accent;
+            background-image: url(../images/gold.png);
+            background-position: top right;
+            background-size: cover;
+
+            @media (min-width:1700px) {
+               // --size: 45vw;
+            }
+
+            @media (max-width:600px) {
+                left: calc(-1*var(--size) - .5rem);
+                //--size: 20vw;
+            }
+        }
+        &.right{
+            margin-left: 50%;
+            &:after {
+                right: calc(-1*var(--size) - 2rem);
+                left: 0;
+                @media (max-width:600px) {
+                    right: calc(-1*var(--size) - .5rem);
+                    left: 0;
+                }
+            }
+        }
+    }
 }
 
-.bg-image{
-    
+.bg-image {
+
     overflow: hidden;
     height: 200px;
     width: 100%;
@@ -327,7 +392,7 @@ $ft-2:var(--font-secondary);
         height: 170px;
     }
 
-    img{
+    img {
         width: 100%;
 
         @media (max-width:992px) {
@@ -335,6 +400,7 @@ $ft-2:var(--font-secondary);
             height: 210px;
             //margin-right: -5rem;
         }
+
         @media (max-width:768px) {
             // height: 210px;
             margin-right: -5rem;
@@ -342,44 +408,78 @@ $ft-2:var(--font-secondary);
     }
 }
 
-#esperar{
-
-    .caixa{
+#esperar {
+position: relative;
+    .caixa {
         padding: 1.5rem;
         border-radius: 1rem;
         background-image: url(../images/bg-azul.jpeg);
     }
+
+    .logo-tl {
+        opacity: 0.15;
+        scale: 1.1;
+        translate: -10%;
+    
+        @media (max-width:992px) {
+           display: none;
+        }
+
+    }
 }
 
-#trabalhando{
-    background-image: url(../images/trabalhando.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+
+#trabalhando {
+    position: relative;
+
+
+    .bg-trab {
+        position: absolute;
+        background-image: url(../images/trabalhando.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150%;
+
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+
+    }
+
+    h2{
+        text-shadow: 5px 5px 30px rgba($color: #fff, $alpha: .7), -5px 5px 30px rgba($color: #fff, $alpha: .7), 5px -5px 30px rgba($color: #fff, $alpha: .7), -5px -5px 30px rgba($color: #fff, $alpha: .7);
+    }
 
     @media (max-width:767px) {
         background-size: cover;
         position: relative;
-        &:after{
-            content:"";
-            background: rgba($color: #fff, $alpha: .5);
+
+        &:after {
+            content: "";
+            background: rgba($color: #fff, $alpha: .7);
+            backdrop-filter: blur(3px);
             position: absolute;
             inset: 0;
         }
 
-        h2{
+        h2 {
             position: relative;
             z-index: 1000;
         }
+
+        .bg-trab {
+            width: 100%;
+        }
+
     }
 
-    .bg-trab{
-        overflow: hidden;
-    }
 }
 
 #escolha {
     background-image: url(../images/marmore.jpg);
-    
+
     background-size: cover;
     background-attachment: fixed;
 
@@ -407,13 +507,25 @@ $ft-2:var(--font-secondary);
 }
 
 footer {
-    .pattern {
-        height: 50px;
-        background-image: url(../images/pattern.png);
-        background-size: contain;
 
-        @media (max-width:576px) {
-            background-size: cover;
+    .icon{
+        text-align: center;
+        svg{
+            height: 20px;
         }
     }
+
+    .img-rodape{
+        max-height: 140px;
+    }
+
+    // .pattern {
+    //     height: 50px;
+    //     background-image: url(../images/pattern.png);
+    //     background-size: contain;
+
+    //     @media (max-width:576px) {
+    //         background-size: cover;
+    //     }
+    // }
 }
