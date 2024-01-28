@@ -461,4 +461,11 @@ footer .icon svg {
 }
 footer .img-rodape {
   max-height: 140px;
+}
+
+#curriculo {
+  background-image: url(../images/marmore.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }/*# sourceMappingURL=style-page.css.map */
