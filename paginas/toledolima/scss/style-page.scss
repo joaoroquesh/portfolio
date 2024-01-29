@@ -228,7 +228,7 @@ $ft-2:var(--font-secondary);
     }
 }
 
-#home {
+#inicio {
     height: calc(100vh);
     background-image: url('../images/bg-home.png');
     background-size: cover;
@@ -535,4 +535,19 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+
+    .logo-tl{
+        opacity: .17;
+        
+    }
+      
+      .img-sticky {
+        transition: top 0.3s; /* Efeito de transição suave */
+      }
+      
+      .sticky {
+        //position: fixed;
+        top: 82px; /* Distância do topo quando sticky */
+      }
+      
 }

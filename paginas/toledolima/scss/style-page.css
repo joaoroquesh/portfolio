@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'styles.css';
 :root {
   --primary-300:#244CFF;
@@ -205,7 +206,7 @@
   width: 100%;
 }
 
-#home {
+#inicio {
   height: 100vh;
   background-image: url("../images/bg-home.png");
   background-size: cover;
@@ -214,13 +215,13 @@
   overflow: hidden;
 }
 @media (max-width: 576px) {
-  #home {
+  #inicio {
     padding-top: 150px;
     height: auto;
     background: #fff;
   }
 }
-#home:after {
+#inicio:after {
   content: "";
   position: absolute;
   inset: 0;
@@ -229,18 +230,18 @@
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
 }
 @media (max-width: 576px) {
-  #home:after {
+  #inicio:after {
     content: none;
   }
 }
-#home .img-mobile {
+#inicio .img-mobile {
   padding-block: 8rem;
   background-image: url("../images/bg-home.png");
   background-size: cover;
   background-position: right;
   position: relative;
 }
-#home .img-mobile:after {
+#inicio .img-mobile:after {
   content: "";
   position: absolute;
   top: -1px;
@@ -248,17 +249,17 @@
   height: 60px;
   background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 100%);
 }
-#home .px-0 {
+#inicio .px-0 {
   padding-inline: 0.01px !important;
 }
-#home .content {
+#inicio .content {
   position: relative;
   z-index: 10;
 }
-#home h6 {
+#inicio h6 {
   line-height: 1.4 !important;
 }
-#home .btn-gradient {
+#inicio .btn-gradient {
   width: 230px;
 }
 
@@ -468,4 +469,13 @@ footer .img-rodape {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+}
+#curriculo .logo-tl {
+  opacity: 0.17;
+}
+#curriculo .img-sticky {
+  transition: top 0.3s; /* Efeito de transição suave */
+}
+#curriculo .sticky {
+  top: 82px; /* Distância do topo quando sticky */
 }/*# sourceMappingURL=style-page.css.map */

@@ -38,7 +38,7 @@
 
 <body class="">
 
-  <nav class="nav-section bg-branco fixed-top" data-aos="fade-down">
+  <nav class="nav-section fixed-top" data-aos="fade-down">
     <div class="container px-3">
       <div class="row py-2">
         <div class="col px-0">
@@ -56,7 +56,7 @@
 
               <ul class="navbar-nav align-items-lg-center justify-content-end w-100">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#home">Home</a>
+                  <a class="nav-link active" href="#inicio">Início</a>
                 </li>
 
                 <li class="nav-item">
@@ -97,7 +97,7 @@
   <section id="tl" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example"
     tabindex="0">
 
-    <section id="home" class="parallax-background" data-speed="-0.2">
+    <section id="inicio" class="parallax-background" data-speed="-0.2">
       <div class="container h-100 content">
         <div class="row center-v h-100">
 
@@ -147,7 +147,7 @@
             </p>
 
 
-            <a class="btn btn-gradient btn-click px-5" href="curriculo.html">
+            <a class="btn btn-gradient btn-click px-5" href="curriculo">
               Veja nosso curriculo
             </a>
 
@@ -481,30 +481,6 @@
     });
   </script>
 
-  <script>
-    window.addEventListener('scroll', function () {
-      const parallaxImages = document.querySelectorAll('.parallax-img');
-
-      parallaxImages.forEach(img => {
-        // Lê a velocidade do parallax do atributo data-speed
-        const speed = parseFloat(img.getAttribute('data-speed')) ||
-          0.1; // Valor padrão se data-speed não estiver definido
-
-        const imgTop = img.offsetTop; // Distância do topo da página até a imagem
-        const scrollY = window.scrollY; // Posição atual do scroll
-        const windowHeight = window.innerHeight; // Altura da janela do navegador
-
-        // Distância da imagem em relação ao centro da tela
-        const imgCenterDistance = scrollY + windowHeight / 2 - (imgTop + img.clientHeight / 2);
-
-        // Calcula o deslocamento para o efeito parallax
-        const parallaxOffset = imgCenterDistance * speed;
-
-        // Aplica o deslocamento à imagem
-        img.style.transform = `translateY(${parallaxOffset}px)`;
-      });
-    });
-  </script>
 
   <script>
     window.addEventListener('scroll', function () {
@@ -573,7 +549,6 @@
       });
     });
   </script>
-
 
 
 
