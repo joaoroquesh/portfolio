@@ -171,6 +171,14 @@ $ft-2:var(--font-secondary);
         &-brand {
             position: relative;
 
+            &-img{
+                height: 40px;
+
+                @media (max-width:400px) {
+                    height: 35px;
+                }
+            }
+
             &:after {
                 --size: 15vw;
                 content: '';
@@ -195,7 +203,6 @@ $ft-2:var(--font-secondary);
             }
 
             @media (max-width:992px) {
-                margin-left: 1.5rem;
                 margin-bottom: 1rem !important;
             }
         }
@@ -214,9 +221,12 @@ $ft-2:var(--font-secondary);
 
         &-collapse {
             &.show {
-                background-color: rgba($color: #fff, $alpha: 0.8);
+                @media (max-width:992px) {
+                    background-color: rgba($color: #fff, $alpha: 0.8);
+                    backdrop-filter: blur(10px);
+                    margin-bottom: 1rem;
+                }
 
-                backdrop-filter: blur(10px);
             }
         }
     }
@@ -260,16 +270,19 @@ $ft-2:var(--font-secondary);
     }
 
     .img-mobile {
-        padding-block: 8rem;
-        background-image: url('../images/bg-home.png');
-        background-size: cover;
-        background-position: right;
+        //padding-block: 8rem;
+        // background-image: url('../images/bg-home.png');
+        // background-size: cover;
+        // background-position: right;
         position: relative;
 
-        &:after {
+        &:before {
             content: '';
             position: absolute;
+            display: block;
             top: -1px;
+            left: 0;
+            right: 0;
             width: 100%;
             height: 60px;
             background: linear-gradient(180deg, rgba($color: #fff, $alpha: 1) 0%, rgba($color: #fff, $alpha: 0) 100%);
@@ -410,6 +423,12 @@ $ft-2:var(--font-secondary);
 
 #esperar {
 position: relative;
+
+h1{
+    @media (max-width:365px) {
+        font-size: var(--font-size-2)!important;
+    }
+}
     .caixa {
         padding: 1.5rem;
         border-radius: 1rem;
