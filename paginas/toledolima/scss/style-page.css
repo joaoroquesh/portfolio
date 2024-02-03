@@ -447,6 +447,11 @@
   width: 40%;
   height: 100%;
 }
+@media (min-width: 1280px) {
+  #trabalhando .bg-trab {
+    width: 30%;
+  }
+}
 #trabalhando h2 {
   text-shadow: 5px 5px 30px rgba(255, 255, 255, 0.7), -5px 5px 30px rgba(255, 255, 255, 0.7), 5px -5px 30px rgba(255, 255, 255, 0.7), -5px -5px 30px rgba(255, 255, 255, 0.7);
 }
