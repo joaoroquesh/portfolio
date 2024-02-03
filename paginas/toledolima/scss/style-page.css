@@ -89,6 +89,34 @@
 .btn-gradient.focus, .btn-gradient:focus, .btn-gradient:not(:disabled):not(.disabled).active:focus, .btn-gradient:not(:disabled):not(.disabled):active:focus, .show > .btn-gradient.dropdown-toggle:focus {
   box-shadow: 0 0 0 0rem var(--accent);
 }
+.btn-outline-gradient {
+  background-color: transparent;
+  background-size: 200%;
+  background-position: right;
+  border: 1px solid var(--primary) !important;
+  color: var(--primary);
+  transition: 0.5s all ease-in-out;
+}
+.btn-outline-gradient svg * {
+  stroke: var(--primary);
+}
+.btn-outline-gradient:not(:disabled):not(.disabled).active, .btn-outline-gradient:not(:disabled):not(.disabled):active, .show > .btn-outline-gradient.dropdown-toggle, .btn-outline-gradient:hover {
+  background-image: url(../images/bg-azul-small.jpg);
+  background-position: left;
+  color: #FFF;
+}
+.btn-outline-gradient:not(:disabled):not(.disabled).active svg *, .btn-outline-gradient:not(:disabled):not(.disabled):active svg *, .show > .btn-outline-gradient.dropdown-toggle svg *, .btn-outline-gradient:hover svg * {
+  stroke: #FFF;
+}
+.btn-outline-gradient:active {
+  background-position: right;
+}
+.btn-outline-gradient:focus-visible {
+  outline: var(--primary) auto 0px;
+}
+.btn-outline-gradient.focus, .btn-outline-gradient:focus, .btn-outline-gradient:not(:disabled):not(.disabled).active:focus, .btn-outline-gradient:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-gradient.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0rem var(--accent);
+}
 
 .nav-section {
   background-color: rgba(255, 255, 255, 0);
@@ -468,6 +496,9 @@
   color: var(--secondary);
 }
 
+footer {
+  background-image: url(../images/bg-azul.jpeg);
+}
 footer .icon {
   text-align: center;
 }

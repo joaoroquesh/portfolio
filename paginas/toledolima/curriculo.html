@@ -64,11 +64,13 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="https://www.joaoroquedesign.com/paginas/toledolima#principios">Missão, visão e valores</a>
+                  <a class="nav-link" href="https://www.joaoroquedesign.com/paginas/toledolima#principios">Missão, visão
+                    e valores</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="https://www.joaoroquedesign.com/paginas/toledolima#esperar">o que Esperar</a>
+                  <a class="nav-link" href="https://www.joaoroquedesign.com/paginas/toledolima#esperar">o que
+                    Esperar</a>
                 </li>
 
                 <li class="nav-item">
@@ -105,7 +107,7 @@
               <p class="c-primary">
                 <b>Dr. Marcos de Toledo - CRM DF 25341</b>
               </p>
-              <p class="c-primary">
+              <p class="c-primary text-justify">
                 Médico com Título de Medicina do Trabalho ANAMT- RQE N° 15624.
 
                 Atualmente é Staff Health Officer do Comitê Internacional da Cruz Vermelha – CICV e médico do trabalho
@@ -115,11 +117,12 @@
                 Pós-graduado em Termologia Médica pelo Departamento de Neurologia da USP.
               </p>
             </div>
-            <div class="">
+
+            <div class="mb-5">
               <p class="c-primary">
                 <b>Enfa. Marta Pinheiro Lima - COREN DF 168697</b>
               </p>
-              <p class="c-primary">
+              <p class="c-primary text-justify">
                 Enfermeira com especialização em Saúde do Trabalhador e Gestão Hospitalar pelo Instituto Sírio Libanês
                 de Ensino e Pesquisa. Foi Coordenadora de Hotelaria Hospitalar do Hospital Regional de Santa Maria –SES
                 DF. Chefiou o Serviço da Saúde Ocupacional e Segurança do Trabalho na Empresa Brasileira de Serviços
@@ -128,9 +131,27 @@
               </p>
             </div>
 
-
-
-
+            <div class="mb-5">
+              <p class="c-primary">
+                <b>Dr. Guilherme Campos Fonseca - OAB/SP 294.052</b>
+              </p>
+              <p class="c-primary text-justify">
+                Formado em Direito pela Faculdade de Direito de Franca e em História (Bacharelado e Licenciatura) pela
+                Universidade Estadual Paulista. Possui especialização em Direito do Trabalho (2019), Direito
+                Constitucional (2018) pela Faculdade Única e MBA em Saúde Pública (2019). Empregado Público Federal, no
+                cargo de Advogado da Ebserh, desde 2017, atuou como Chefe de Serviço Jurídico para Assuntos de Pessoal
+                de 2019 a 2021. Atualmente, atua como Chefe de Serviço Jurídico do Consultivo Trabalhista.
+              </p>
+            </div>
+            <a href="../" class="btn btn-outline-gradient">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 7L5 12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 17L5 12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                 Voltar para o site
+                 &nbsp;&nbsp;&nbsp;
+            </a>
           </div>
         </div>
       </div>
@@ -149,12 +170,12 @@
               Digite seu nome e telefone para entrar em contato conosco!
             </p>
             <form class="form row center-h">
-              <div class="px-2 col-lg-3 col-md-4 col-sm-6">
+              <!-- <div class="px-2 col-lg-3 col-md-4 col-sm-6">
                 <input type="text" class="form-control text-center" id="name" placeholder="Nome">
               </div>
               <div class="px-2 col-lg-3 col-md-4 col-sm-6">
                 <input type="tel" class="form-control text-center" id="tel" placeholder="Telefone">
-              </div>
+              </div> -->
               <div class="px-2 col-lg-2 col-md-3 col-sm-12">
                 <button type="submit" class="btn btn-gradient h-100 w-100">
                   Fale conosco
@@ -211,7 +232,8 @@
                   </svg>
                   <p class="c-branco small mt-2">
                     (61) 98480-8008 <br>
-                    (62) 99622-7508
+                    (62) 99622-7508 <br>
+                    (62) 99692-9869 
                   </p>
                 </div>
               </div>
@@ -277,39 +299,37 @@
   </script>
 
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const img = document.querySelector('.img-sticky');
-  const col = document.querySelector('.col');
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const img = document.querySelector('.img-sticky');
+      const col = document.querySelector('.col');
 
-  function checkSticky() {
-    const colRect = col.getBoundingClientRect();
-    const imgHeight = img.offsetHeight;
-    const stickyStart = 82; // Quando a imagem se torna sticky
-    const stickyEnd = colRect.height - imgHeight + stickyStart;
+      function checkSticky() {
+        const colRect = col.getBoundingClientRect();
+        const imgHeight = img.offsetHeight;
+        const stickyStart = 82; // Quando a imagem se torna sticky
+        const stickyEnd = colRect.height - imgHeight + stickyStart;
 
-    if (colRect.top <= stickyStart && colRect.bottom >= stickyEnd) {
-      img.classList.add('sticky');
-      img.style.bottom = 'auto'; // Reseta o estilo bottom se houver
-    } else if (colRect.bottom < stickyEnd) {
-      img.classList.remove('sticky');
-      img.style.position = 'absolute'; // Faz a imagem se mover com o final da div
-      img.style.top = 'auto';
-      img.style.bottom = '0'; // Posiciona a imagem no final da div
-    } else {
-      img.classList.remove('sticky');
-      img.style.position = ''; // Reseta os estilos de posição
-      img.style.top = '';
-      img.style.bottom = '';
-    }
-  }
+        if (colRect.top <= stickyStart && colRect.bottom >= stickyEnd) {
+          img.classList.add('sticky');
+          img.style.bottom = 'auto'; // Reseta o estilo bottom se houver
+        } else if (colRect.bottom < stickyEnd) {
+          img.classList.remove('sticky');
+          img.style.position = 'absolute'; // Faz a imagem se mover com o final da div
+          img.style.top = 'auto';
+          img.style.bottom = '0'; // Posiciona a imagem no final da div
+        } else {
+          img.classList.remove('sticky');
+          img.style.position = ''; // Reseta os estilos de posição
+          img.style.top = '';
+          img.style.bottom = '';
+        }
+      }
 
-  window.addEventListener('scroll', checkSticky);
-  window.addEventListener('resize', checkSticky); // Garante que funcione corretamente ao redimensionar a janela
-});
-
-
-</script>
+      window.addEventListener('scroll', checkSticky);
+      window.addEventListener('resize', checkSticky); // Garante que funcione corretamente ao redimensionar a janela
+    });
+  </script>
 
 
 

@@ -56,7 +56,7 @@ $ft-2:var(--font-secondary);
 }
 
 .btn {
-
+    
     &-gradient {
         background-color: hsla(44, 84%, 70%, 1);
         background-image: url(../images/bg-azul-small.jpg);
@@ -76,6 +76,50 @@ $ft-2:var(--font-secondary);
 
         &:active {
             background-position: left;
+        }
+
+        &:focus-visible {
+            outline: $primary auto 0px;
+        }
+
+        &.focus,
+        &:focus,
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        .show>&.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0rem $accent;
+        }
+    }
+    &-outline-gradient{
+        background-color: transparent;       
+        background-size: 200%;
+        background-position: right;
+        border: 1px solid $primary !important;
+        color: $primary;
+        transition: .5s all ease-in-out;
+
+        svg{
+            *{
+                stroke:$primary;
+            }
+        }
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active,
+        .show>&.dropdown-toggle,
+        &:hover {
+            background-image: url(../images/bg-azul-small.jpg);
+            background-position: left;
+            color: $branco;
+            svg{
+                *{
+                    stroke:$branco;
+                }
+            }
+        }
+
+        &:active {
+            background-position: right;
         }
 
         &:focus-visible {
@@ -526,7 +570,7 @@ h1{
 }
 
 footer {
-
+    background-image: url(../images/bg-azul.jpeg);
     .icon{
         text-align: center;
         svg{
