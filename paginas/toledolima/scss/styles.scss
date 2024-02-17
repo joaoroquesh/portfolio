@@ -481,6 +481,11 @@ body {
   &-fit-content{
     width: fit-content!important;
   }
+  &-md-100{
+    @media (max-width:767px) {
+      width: 100%;
+    }
+  }
 }
 
 

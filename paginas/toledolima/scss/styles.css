@@ -394,6 +394,11 @@ body {
   width: -moz-fit-content !important;
   width: fit-content !important;
 }
+@media (max-width: 767px) {
+  .w-md-100 {
+    width: 100%;
+  }
+}
 
 /* FONTE */
 h1, .h1 {

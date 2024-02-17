@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import 'styles.css';
+@import "styles.css";
 :root {
   --primary-300:#244CFF;
   --primary-400:#1935B3;
@@ -512,6 +512,39 @@ footer .icon svg {
 }
 footer .img-rodape {
   max-height: 140px;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+footer .link {
+  color: #FFF;
+  text-decoration: none;
+}
+footer .link:hover {
+  text-decoration: underline;
+}
+
+.wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000px;
+  transition: all 0.3s ease-in-out;
+}
+.wpp img {
+  width: 70px;
+  height: auto;
+}
+.wpp:hover {
+  scale: 0.95;
+  translate: 2px 2px;
+}
+.wpp:active {
+  scale: 0.9;
+  translate: 4px 4px;
 }
 
 #curriculo {
