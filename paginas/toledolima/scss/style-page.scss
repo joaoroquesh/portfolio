@@ -1,5 +1,5 @@
 @import "colors.scss";
-@import "styles.css";
+@import "styles.scss";
 $ft-1: var(--font-primary);
 $ft-2: var(--font-secondary);
 
@@ -626,6 +626,7 @@ footer {
   }
 
   .img-sticky {
+    position: sticky;
     transition: top 0.3s; /* Efeito de transição suave */
   }
 

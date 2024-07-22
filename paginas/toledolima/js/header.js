@@ -1,115 +1,75 @@
+/* 
 
+Links
 
-/*
-Bootstrap
 */
 
-// Criar novo elemento link
-var Bootstrap = document.createElement("link");
+var head = document.head;
 
-// Definir atributos do Bootstrap
-Bootstrap.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css";
-Bootstrap.type = "text/css";
-Bootstrap.rel = "stylesheet";
+    // Função para adicionar links genéricos ao cabeçalho
+    function adicionarLink(href, rel, type, sizes) {
+        var link = document.createElement('link');
+        link.href = href;
+        link.rel = rel;
+        if (type) link.type = type;
+        if (sizes) link.sizes = sizes;
+        head.appendChild(link);
+    }
 
-// Anexar o Bootstrap ao head da página
-document.getElementsByTagName("head")[0].appendChild(Bootstrap);
+// Adicionando o link do Bootstrap CSS
+adicionarLink('libs/css/bootstrap.css', 'stylesheet');
+adicionarLink('libs/css/aos.css', 'stylesheet');
+
+// Adicionando pré-conexões para o Google Fonts
+adicionarLink('https://fonts.googleapis.com', 'preconnect');
+adicionarLink('https://fonts.gstatic.com', 'preconnect', null, null, true); // O terceiro argumento 'true' para crossorigin é opcional
+
+// Adicionando o Google Fonts CSS
+adicionarLink('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap', 'stylesheet');
+
+// Adicionando folhas de estilo personalizadas
+adicionarLink('font/stylesheet.css', 'stylesheet');
+adicionarLink('scss/style-page.css', 'stylesheet');
+
+// Adicionando o link canônico
+adicionarLink('https://www.consultoriatl.com.br', 'canonical');
+
+// Adicionando ícones de favoritos
+adicionarLink('favicon/apple-touch-icon.png', 'apple-touch-icon', null, '180x180');
+adicionarLink('favicon/favicon-32x32.png', 'icon', 'image/png', '32x32');
+adicionarLink('favicon/favicon-16x16.png', 'icon', 'image/png', '16x16');
 
 
 /* 
 
-Fontes Google
-
-*/
-document.addEventListener('DOMContentLoaded', function() {
-    var head = document.head;
-
-    // Adiciona o link para o preconnect do Google Fonts
-    var preconnectGoogleFonts = document.createElement("link");
-    preconnectGoogleFonts.rel = "preconnect";
-    preconnectGoogleFonts.href = "https://fonts.googleapis.com";
-    head.appendChild(preconnectGoogleFonts);
-
-    // Adiciona o link para o preconnect do Google Fonts Gstatic
-    var preconnectGstatic = document.createElement("link");
-    preconnectGstatic.rel = "preconnect";
-    preconnectGstatic.href = "https://fonts.gstatic.com";
-    preconnectGstatic.crossOrigin = "anonymous";
-    head.appendChild(preconnectGstatic);
-
-    // Adiciona o link da fonte Montserrat do Google Fonts
-    var montserratFont = document.createElement("link");
-    montserratFont.rel = "stylesheet";
-    montserratFont.href = "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap";
-    head.appendChild(montserratFont);
-});
-
-
-/* 
-
-Favicon
+Meta tags
 
 */
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    var head = document.head;
-
-    var icon1 = document.createElement("link");
-    icon1.rel = "apple-touch-icon";
-    icon1.sizes = "180x180";
-    icon1.href = "favicon/apple-touch-icon.png";
-    head.appendChild(icon1);
-
-    var icon2 = document.createElement("link");
-    icon2.rel = "icon";
-    icon2.type = "image/png";
-    icon2.sizes = "32x32";
-    icon2.href = "favicon/favicon-32x32.png";
-    head.appendChild(icon2);
-
-    var icon3 = document.createElement("link");
-    icon3.rel = "icon";
-    icon3.type = "image/png";
-    icon3.sizes = "16x16";
-    icon3.href = "favicon/favicon-16x16.png";
-    head.appendChild(icon3);
-});
-
-
-
-
-/*
-Estilo Padrão
-*/
-
-
-// Criar novo elemento link
-var styleBase = document.createElement("link");
-
-// Definir atributos do styleBase
-styleBase.href = "scss/style-page.css";
-styleBase.type = "text/css";
-styleBase.rel = "stylesheet";
-
-// Anexar o styleBase ao head da página
-document.getElementsByTagName("head")[0].appendChild(styleBase);
-
-/*
-Font
-*/
-
-// Criar novo elemento link
-var styleFont = document.createElement("link");
-
-// Definir atributos do styleFont
-styleFont.href = "font/stylesheet.css";
-styleFont.type = "text/css";
-styleFont.rel = "stylesheet";
-
-// Anexar o styleFont ao head da página
-document.getElementsByTagName("head")[0].appendChild(styleFont);
-
+// Criação de uma função para facilitar a adição de meta tags
+function criarMetaTag(name, content, property) {
+    var tag = document.createElement('meta');
+    if (name) tag.setAttribute('name', name);
+    if (property) tag.setAttribute('property', property);
+    tag.setAttribute('content', content);
+    head.appendChild(tag);
+}
+  
+  
+  // Adicionando as meta tags
+  criarMetaTag(null, 'Toledo & Lima', 'og:site_name');
+  criarMetaTag(null, 'Toledo & Lima', 'og:title');
+  criarMetaTag(null, 'http://www.consultoriatl.com.br', 'og:url');
+  criarMetaTag(null, 'http://www.consultoriatl.com.br/images/ogimage.jpg', 'og:image');
+  criarMetaTag(null, 'image/jpeg', 'og:image:type');
+  criarMetaTag(null, '400', 'og:image:width');
+  criarMetaTag(null, '320', 'og:image:height');
+  criarMetaTag(null, 'website', 'og:type');
+  criarMetaTag('description', 'Somos uma consultoria especializada em Saúde Ocupacional e Segurança do Trabalho, dedicada a auxiliar as empresas do setor da saúde.');
+  criarMetaTag('keywords', 'readaptação, insalubridade, periculosidade, previdência, retorno ao trabalho, horas extras, amamentação, demissão, demissão por justa causa, demissão sem justa causa, Portador de deficiência, Restrição e readaptação ao trabalho, Doenças relacionadas ao trabalho, PCD, Classificação Internacional de Funcionalidades - CIF.');
+  criarMetaTag('robots', 'index, follow');
+  criarMetaTag('author', 'João Roque');
+  
 
 
 /* 
